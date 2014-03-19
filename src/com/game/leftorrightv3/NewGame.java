@@ -17,6 +17,7 @@ public class NewGame extends Activity {
 	Scene currentScene;
 	int currentChoice;
 	int currentNeeded;
+	int[] itemsFound;
 	boolean alive;
 
 	@Override
@@ -29,6 +30,7 @@ public class NewGame extends Activity {
 		gamePic = (Button)findViewById(R.id.gamePic);
 		currentChoice = 0;
 		currentNeeded = 0;
+		itemsFound = new int[StartMenu.numberOfItems];
 		alive = true;
 
 		Scene startScene = game.pickScene(0);
@@ -62,18 +64,20 @@ public class NewGame extends Activity {
 				if(currentScene.itemsRecieved.get(0) == 99){
 					Random r = new Random();
 					
-					toReceive = r.nextInt(16);
+					toReceive = r.nextInt(StartMenu.numberOfItems);
 					
 					while(toReceive == 13 || toReceive == 14 || game.items[toReceive] == 1 || count < 16){
-						toReceive = r.nextInt(16);
+						toReceive = r.nextInt(StartMenu.numberOfItems);
 						count++;
 					}
 				}
 				if(count == 16){
 					game.items[0]++;
+					itemsFound[0]++;
 				}
 				else{
 					game.items[toReceive]++;
+					itemsFound[0]++;
 				}
 					
 			}
@@ -90,18 +94,20 @@ public class NewGame extends Activity {
 				if(currentScene.itemsRecieved.get(0) == 99){
 					Random r = new Random();
 					
-					toReceive = r.nextInt(16);
+					toReceive = r.nextInt(StartMenu.numberOfItems);
 					
 					while(toReceive == 13 || toReceive == 14 || game.items[toReceive] == 1 || count < 16){
-						toReceive = r.nextInt(16);
+						toReceive = r.nextInt(StartMenu.numberOfItems);
 						count++;
 					}
 				}
 				if(count == 16){
 					game.items[0]++;
+					itemsFound[0]++;
 				}
 				else{
 					game.items[toReceive]++;
+					itemsFound[toReceive]++;
 				}				
 			}
 		} 
@@ -148,7 +154,7 @@ public class NewGame extends Activity {
 			
 		}
 		else{
-			setContentView(R.layout.game_over);
+			setContentView(R.layout.vinning);
 		}
 	}
 

@@ -8,6 +8,8 @@ import android.view.View;
 
 public class StartMenu extends Activity {
 
+	public static final int numberOfItems = 16;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

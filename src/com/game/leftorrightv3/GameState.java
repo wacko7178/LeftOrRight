@@ -90,7 +90,7 @@ public class GameState {
 				}
 			}
 			
-			items = new int[16];
+			items = new int[StartMenu.numberOfItems];
 			Arrays.fill(items, 0);
 			
 		} catch (FileNotFoundException e) {
