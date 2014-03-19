@@ -15,7 +15,7 @@ public class StartMenu extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
-		gallery = new Gallery();
+		gallery = new Gallery(this);
 		gallery.readFile();
 		
 		setContentView(R.layout.activity_start_menu);
