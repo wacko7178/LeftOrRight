@@ -46,21 +46,23 @@ public class GameState {
 			
 			
 			
-			String currName = sf.next();
+			String currName = sf.nextLine();
+			String currDescr = "";
 			while(sf.hasNext()){
-				String next = sf.next();		
+				currDescr = sf.nextLine();
+				String next = sf.nextLine();
 				ArrayList<choices> choiceList = new ArrayList<choices>();
 				while(!next.startsWith("*") && sf.hasNext()){
 					String currOption1 = next;
-					String currOption2 = sf.next();
+					String currOption2 = sf.nextLine();
 					choices currChoice = new choices(currOption1, currOption2);
 					choiceList.add(currChoice);
 					if(sf.hasNext())
-						next = sf.next();
+						next = sf.nextLine();
 					//		System.out.println(currName + " " + currOption1 + " " + currOption2 + " " + next);
 
-				}				
-				Scene currScene = new Scene(currName, choiceList, context);
+				}
+				Scene currScene = new Scene(currName, currDescr, choiceList, context);
 				scenarios.add(currScene);
 				currName= next;
 			}
@@ -71,15 +73,18 @@ public class GameState {
 			
 			
 			for(int i = 0; i < scenarios.size(); i++){
-				String currScene = cRs.next();
+				String currScene = cRs.nextLine();
 				for(int j = 0; j < scenarios.get(i).choice.size(); j++){
 					try{
 						choices choice = scenarios.get(i).choice.get(j);
-						choice.setResponse1(cRs.next(), cRs.nextInt(), cRs.nextInt(), cRs.nextInt());
-						choice.setResponse2(cRs.next(), cRs.nextInt(), cRs.nextInt(), cRs.nextInt());
+						//choice.setResponse1(cRs.nextLine(), cRs.nextInt(), cRs.nextInt(), cRs.nextInt());
+						//choice.setResponse2(cRs.nextLine(), cRs.nextInt(), cRs.nextInt(), cRs.nextInt());
+						choice.setResponse1(cRs.nextLine(), cRs.nextLine());
+						choice.setResponse2(cRs.nextLine(), cRs.nextLine());
 					} catch(Exception e){
 						Log.d("index i: ", i + " ");
 						Log.d("index j: ", j + " ");
+						e.printStackTrace();
 					}
 					
 				}

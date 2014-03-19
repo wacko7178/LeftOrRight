@@ -37,7 +37,7 @@ public class NewGame extends Activity {
 
 		left.setText(c.string1);
 		right.setText(c.string2);
-		gamePic.setText(startScene.name);
+		gamePic.setText(startScene.sceneDescription);
 	}
 
 	@Override
@@ -75,8 +75,7 @@ public class NewGame extends Activity {
 				else{
 					game.items[toReceive]++;
 				}
-				
-				
+					
 			}
 			 
 		} else{
@@ -145,7 +144,7 @@ public class NewGame extends Activity {
 			gamePic = (Button)findViewById(R.id.gamePic);
 			left.setText(c.string1);
 			right.setText(c.string2);
-			gamePic.setText(nextScene.name);
+			gamePic.setText(nextScene.sceneDescription);
 			
 		}
 		else{

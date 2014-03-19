@@ -1,22 +1,286 @@
-*leftOrRight continue 1 0 1 continue 1 0 1
-*cyclops GotKey 0 0 1 gameOver 1 1 1 GotKey 0 0 0 gameOver 1 1 1 GotKey 0 0 0 GotKey 0 0 1 GotKey 0 0 0 gameOver 1 1 1 GotKey 0 0 0 GotKey 0 0 1 GotKey 0 0 0 Gotkey 0 0 1 GotKey 0 0 0 GotKey 0 0 1 GotKey 0 0 0 gameOver 1 1 1 GotKey 0 0 0 GotKey 0 0 1 GotKey 0 0 0 gameOver 1 1 0 GotKey 0 0 0 gameOver 1 1 1 
-*fireEatingBats continue 1 0 1 gameOver 1 1 1 GotBabyBottleAndFireDino 0 0 0 continue 1 0 1 GotBabyBottle 0 0 0 continue 1 0 1 GotBabyBottle 0 0 0 gameOver 1 1 1 
-*dog continue 1 0 1 GotDog 0 0 1 GotDog 0 0 0 continue 1 0 1 GotDog 0 0 0 continue 1 0 1 GotDog 0 0 0 GotDog 0 0 1 
-*werewolves gameOver 1 1 1 continue 1 0 1 secretArea 1 0 0 continue 1 0 1 continue 1 0 0 continue 1 0 1 continue 1 0 0 continue 1 0 1 
-*babyTRex gameOver 1 1 1 GotBabyTRex 0 0 1 gameOver 1 1 0 GotBabyTRex 0 0 1 GotBabyTRex 0 0 0 gameOver 1 1 0 
-*liquidIce GotLiquidIce 0 0 1 continue 1 0 1 GotLiquidIce 0 0 1 GotWaterDino 0 0 0
-*battingCages continue 1 0 1 gameOver 1 1 1 continue 1 0 1 GotSilverBat 0 0 0 
-*cowboy continue 1 0 1 GotKey 0 0 1 continue 1 0 1 GotKey 0 0 0 continue 1 0 1 GotKey 0 0 0 continue 1 0 1 GotKey 0 0 0 continue 1 0 1 GotKey 0 0 0
-*chests continue 1 0 1 GotRandom 0 0 1 continue 1 0 1 GotRandom 0 0 0 continue 1 0 1 GotRandom 0 0 0 continue 1 0 1 GotRandom 0 0 0 
-*slotMachine GotKeyOrContinue 0 0 1 continue 1 0 1 GotKey 0 0 0 continue 1 0 1 GotKey 0 0 0 continue 1 0 1 
-*sumoWrestler gameOver 1 1 1 continue 1 0 1 continue 1 0 0 continue 1 0 1 continue 1 0 0 gameOver 1 1 1 CopsTakeOutSumo 1 0 0 Continue 1 0 1 continue 1 0 0 gameOver 1 1 1 
-*dinnerTable GotItem 0 0 1 continue 1 0 1  
-*lazyRiver Continue 1 0 1 gameOver 1 1 1 
-*ferret gameOver 1 1 1 GotFerret 0 0 1 gameOver 1 1 1 GotFerret 0 0 0 
-*mattresses continue 1 0 1 GotDNRTag 0 0 1 continue 1 0 1 FerretWreckedThePlace 1 0 0
-*hippopatapi continue 1 0 1 gameOver 1 1 1 
-*alienAbduction gameOver 1 1 1 continue 1 0 1 GotAlienRayGun 0 0 0 continue 1 0 1 GotAlienRayGun 0 0 0 continue 1 0 1 
-*bombRoom ContinueDependingOnCordCut 1 0 1 DeadDOCC 1 1 1 
-*cyclopsPicinic continue 1 0 1 gameOver 1 1 1 continue 1 0 0 continue 1 0 1 continue 1 0 0 continue 1 0 1 continue 1 0 0 continue 1 0 1 continue 1 0 0 continue 1 0 1 
-*donutShop GotDonut 0 0 1 StoleDonut 0 0 1
-*cop goToJail 1 0 1 gameOver 1 1 1
+*leftOrRight
+continue
+1 0 1
+continue
+1 0 1
+*cyclops
+GotKey
+0 0 1
+gameOver
+1 1 1
+GotKey
+0 0 0
+gameOver
+1 1 1
+GotKey 
+0 0 0
+GotKey
+0 0 1
+GotKey
+0 0 0
+gameOver
+1 1 1
+GotKey
+0 0 0
+GotKey
+0 0 1
+GotKey
+0 0 0
+Gotkey
+0 0 1
+GotKey
+0 0 0
+GotKey
+0 0 1
+GotKey
+0 0 0
+gameOver
+1 1 1
+GotKey
+0 0 0
+GotKey
+0 0 1
+GotKey
+0 0 0
+gameOver
+1 1 0
+GotKey
+0 0 0
+gameOver
+1 1 1 
+*fireEatingBats
+continue
+1 0 1
+gameOver
+1 1 1
+GotBabyBottleAndFireDino
+0 0 0
+continue
+1 0 1
+GotBabyBottle
+0 0 0
+continue
+1 0 1
+GotBabyBottle
+0 0 0
+gameOver
+1 1 1 
+*dog
+continue
+1 0 1
+GotDog
+0 0 1
+GotDog
+0 0 0
+continue
+1 0 1
+GotDog
+0 0 0
+continue
+1 0 1
+GotDog
+0 0 0
+GotDog
+0 0 1 
+*werewolves
+gameOver
+1 1 1
+continue
+1 0 1
+secretArea
+1 0 0
+continue
+1 0 1
+continue
+1 0 0
+continue
+1 0 1
+continue
+1 0 0
+continue
+1 0 1 
+*babyTRex
+gameOver
+1 1 1
+GotBabyTRex
+0 0 1
+gameOver
+1 1 0
+GotBabyTRex
+0 0 1
+GotBabyTRex
+0 0 0
+gameOver
+1 1 0 
+*liquidIce
+GotLiquidIce
+0 0 1
+continue
+1 0 1
+GotLiquidIce
+0 0 1
+GotWaterDino
+0 0 0
+*battingCages
+continue
+1 0 1
+gameOver
+1 1 1
+continue
+1 0 1
+GotSilverBat
+0 0 0 
+*cowboy
+continue
+1 0 1
+GotKey
+0 0 1
+continue
+1 0 1
+GotKey
+0 0 0
+continue
+1 0 1
+GotKey
+0 0 0
+continue
+1 0 1
+GotKey
+0 0 0
+continue
+1 0 1
+GotKey
+0 0 0
+*chests
+continue
+1 0 1
+GotRandom
+0 0 1
+continue
+1 0 1
+GotRandom
+0 0 0
+continue
+1 0 1
+GotRandom
+0 0 0
+continue
+1 0 1
+GotRandom
+0 0 0 
+*slotMachine
+GotKeyOrContinue
+0 0 1
+continue
+1 0 1
+GotKey
+0 0 0
+continue
+1 0 1
+GotKey
+0 0 0
+continue
+1 0 1 
+*sumoWrestler
+gameOver
+1 1 1
+continue
+1 0 1
+continue
+1 0 0
+continue
+1 0 1
+continue
+1 0 0
+gameOver
+1 1 1
+CopsTakeOutSumo
+1 0 0
+Continue
+1 0 1
+continue
+1 0 0
+gameOver
+1 1 1 
+*dinnerTable
+GotItem
+0 0 1
+continue
+1 0 1  
+*lazyRiver
+Continue
+1 0 1
+gameOver
+1 1 1 
+*ferret
+gameOver
+1 1 1
+GotFerret
+0 0 1
+gameOver
+1 1 1
+GotFerret
+0 0 0 
+*mattresses
+continue
+1 0 1
+GotDNRTag
+0 0 1
+continue
+1 0 1
+FerretWreckedThePlace
+1 0 0
+*hippopatapi
+continue
+1 0 1
+gameOver
+1 1 1 
+*alienAbduction
+gameOver
+1 1 1
+continue
+1 0 1
+GotAlienRayGun
+0 0 0
+continue
+1 0 1
+GotAlienRayGun
+0 0 0
+continue
+1 0 1 
+*bombRoom
+ContinueDependingOnCordCut
+1 0 1
+DeadDOCC
+1 1 1 
+*cyclopsPicinic
+continue
+1 0 1
+gameOver
+1 1 1
+continue
+1 0 0
+continue
+1 0 1
+continue
+1 0 0
+continue
+1 0 1
+continue
+1 0 0
+continue
+1 0 1
+continue
+1 0 0
+continue
+1 0 1 
+*donutShop
+GotDonut
+0 0 1
+StoleDonut
+0 0 1
+*cop
+goToJail
+1 0 1
+gameOver
+1 1 1

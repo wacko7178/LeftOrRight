@@ -23,7 +23,7 @@
 
         <Button
             android:id="@+id/left"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight="1"
             android:text="left"
@@ -31,7 +31,7 @@
 
         <Button
             android:id="@+id/right"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight="1"
             android:text="right"

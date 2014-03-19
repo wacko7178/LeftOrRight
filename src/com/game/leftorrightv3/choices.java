@@ -1,5 +1,6 @@
 package com.game.leftorrightv3;
 	public class choices{
+		static final String space = "[ ]+";
 		String string1;
 		String string2;
 		String response1;
@@ -27,10 +28,36 @@ package com.game.leftorrightv3;
 			}
 		}
 		
+		public void setResponse1(String res1, String info){
+			response1 = res1;
+			String[] ints = info.split(space);
+			itemUsed1 = Integer.parseInt(ints[2]);
+			this.itemResp1 = Integer.parseInt(ints[0]);
+			int stillAlive = Integer.parseInt(ints[1]);
+			if(stillAlive == 0){
+				alive1 = true;
+			} else{
+				alive1 = false;
+			}
+		}
+		
 		public void setResponse2(String res2, int itemResp, int stillAlive, int itemUsed){
 			response2 = res2;
 			itemUsed2 = itemUsed;
 			this.itemResp2 = itemResp;
+			if(stillAlive == 0){
+				alive2 = true;
+			} else{
+				alive2 = false;
+			}
+		}
+		
+		public void setResponse2(String res2, String info){
+			response2 = res2;
+			String[] ints = info.split(space);
+			itemUsed2 = Integer.parseInt(ints[2]);
+			this.itemResp2 = Integer.parseInt(ints[0]);
+			int stillAlive = Integer.parseInt(ints[1]);
 			if(stillAlive == 0){
 				alive2 = true;
 			} else{

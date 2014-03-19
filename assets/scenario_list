@@ -1,22 +1,176 @@
-*leftOrRight Left Right
-*cyclops Poke Kick SicDog Kick Burn Poke BubbleBeam Insult BeatCyclops Joke FoodPoisen Poke EatInFront Joke PutInEye Kick UnleashTheBeast Poke PiPocket Kick Shoot Insult
-*fireEatingBats Sneak Wake DinoEat Sneak GiveIce Sneak FeedBS Wake 
-*dog Pet Teach Fetch Tease GiveWater Tease GiveDonut Pet 
-*werewolves Fight Run UseKey Run BeatWithBat Run ShootEm Run
-*babyTRex Pet Steal Feed Steal LooseFerret Feed
-*liquidIce Steal Drink Take GiveDino
-*battingCages StrutYoStufYo BegForGame TalkToCCC PayKey&Bat
-*cowboy Talk Challenge Talk GiveWater Talk EatingContestBS Talk Duel Talk GiveDog
-*chests WalkAway BreakChests WalkAway UseKey WalkAway LetFireDinoLoose WalkAway BreakWithBat
-*slotMachine FreeSpin WalkAway PayKey WalkAway SmashWithBat WalkAway
-*sumoWrestler Wrestle Push GiveSushi Push GiveDonut Wrestle HideDNRTag Push NurseWithBB Wrestle
-*dinnerTable PickOneItem WalkAway
-*lazyRiver RideRiver CrossBridge
-*ferret Pet BopHead Pet Feed
-*mattresses Sleep StealDNR Sleep LooseFerret
-*hippopatapi PushButton RideHippo
-*alienAbduction Escape TakeProbing LooseFerret TakeProbing EscapeUsingBat TakeProbing
-*bombRoom PickCord Die
-*cyclopsPicinic Continue Join LooseWaterDino Continue LooseFireDino Continue HideDNRTag Continue LooseFerret Continue
-*donutShop Work Steal
-*cop AssumePosition Run
+*leftOrRight 
+You've come to a fork in the road! Which way will you go?
+Left
+Right
+*cyclops
+Cyclops
+Poke
+Kick
+SicDog
+Kick
+Burn
+Poke
+BubbleBeam
+Insult
+BeatCyclops
+Joke
+FoodPoison
+Poke
+EatInFront
+Joke
+PutInEye
+Kick
+UnleashTheBeast
+Poke
+PiPocket
+Kick
+Shoot
+Insult
+*fireEatingBats
+BATS!
+Sneak
+Wake
+DinoEat
+Sneak
+GiveIce
+Sneak
+FeedBS
+Wake 
+*dog
+It's Lassie!
+Pet
+Teach
+Fetch
+Tease
+GiveWater
+Tease
+GiveDonut
+Pet 
+*werewolves
+Watch for wolves
+Fight
+Run
+UseKey
+Run
+BeatWithBat
+Run
+ShootEm
+Run
+*babyTRex
+AAAAAWWWWw look at duh babyyyyy TREX!(RAWR)
+Pet
+Steal
+Feed
+Steal
+LooseFerret
+Feed
+*liquidIce
+Pedastal of liquid ice, so nice!
+Steal
+Drink
+Take
+GiveDino
+*battingCages
+Ohhh, a CCC working some batting cages
+StrutYoStufYo
+BegForGame
+TalkToCCC
+PayKey&Bat
+*cowboy
+Howdy pardner
+Talk
+Challenge
+Talk
+GiveWater
+Talk
+EatingContestBS
+Talk
+Duel
+Talk
+GiveDog
+*chests
+Ohhhh a shiny treasure chest
+WalkAway
+BreakChests
+WalkAway
+UseKey
+WalkAway
+LetFireDinoLoose
+WalkAway
+BreakWithBat
+*slotMachine
+A slot machine? Are we in Vegas?
+FreeSpin
+WalkAway
+PayKey
+WalkAway
+SmashWithBat
+WalkAway
+*sumoWrestler
+OOoooOOOhhh, sumo sumo!
+Wrestle
+Push
+GiveSushi
+Push
+GiveDonut
+Wrestle
+HideDNRTag
+Push
+NurseWithBB
+Wrestle
+*dinnerTable
+MMmmm dinner
+PickOneItem
+WalkAway
+*lazyRiver
+A lazy river, sounds relaxing
+RideRiver
+CrossBridge
+*ferret
+It's a ferret! I'm literally freaking out
+Pet
+BopHead
+Pet
+Feed
+*mattresses
+A mattress store.... how comfy
+Sleep
+StealDNR
+Sleep
+LooseFerret
+*hippopatapi
+A heaping helping of hippopatapi! Also a button..
+PushButton
+RideHippo
+*alienAbduction
+You've been abducted by aliens, hey that this is shiny!
+Escape
+TakeProbing
+LooseFerret
+TakeProbing
+EscapeUsingBat
+TakeProbing
+*bombRoom
+You find yourself in a room with a big ol' bomb
+PickCord
+Meditate on the meaning of life
+*cyclopsPicinic
+Looks like the one eyed monster is having some fun
+Continue 
+Join
+LooseWaterDino
+Continue
+LooseFireDino
+Continue
+HideDNRTag
+Continue
+LooseFerret
+Continue
+*donutShop
+Mmmm a doughnut shop!
+Work
+Steal
+*cop
+Cops! They dun did found you out!
+AssumePosition
+Run
