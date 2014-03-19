@@ -1,0 +1,22 @@
+*leftOrRight -1 ^ -1 -1 
+*cyclops 0 ^ 2 1 13 2 14 3 5 4 7 5 9 6 8 7 10 8 11 9 12 10
+*fireEatingBats 1 ^ 3 1 4 2 8 3 
+*dog 2 ^ 15 1 9 2 4 3 
+*werewolves -1 ^ 0 1 7 2 12 3 
+*babyTRex 3 ^ 1 1 10 2 
+*liquidIce 4 ^ 3 1
+*battingCages 5 ^ 0 1
+*cowboy 0 ^ 4 1 8 2 12 3 2 4
+*chests 99 ^ 0 1 13 2 5 3 
+*slotMachine 0 ^ 0 1 5 2 
+*sumoWrestler -1 ^ 7 1 9 2 11 3 1 4 
+*dinnerTable 7 8 9 ^ -1 -1 
+*lazyRiver -1 ^ -1 -1 
+*ferret 10 ^ 1 1 
+*mattresses 11 ^ 10 1 
+*hippopatapi -1 ^ -1 -1 
+*alienAbduction 12 ^ 10 1 5 2 
+*bombRoom -1 ^ -1 -1 
+*cyclopsPicinic -1 ^ 14 1 13 2 11 3 10 4
+*donutShop 9 ^ -1 -1 
+*cop -1 ^ -1 -1 
