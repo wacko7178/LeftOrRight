@@ -10,13 +10,17 @@ public class StartMenu extends Activity {
 
 	public static final int numberOfItems = 16;
 	public Gallery gallery;
+	public LogBook logBook;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
-		gallery = new Gallery(this);
+		gallery = new Gallery();
 		gallery.readFile();
+		
+		logBook = new LogBook();
+		logBook.readFile();
 		
 		setContentView(R.layout.activity_start_menu);
 		
