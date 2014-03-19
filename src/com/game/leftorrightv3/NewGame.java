@@ -3,6 +3,7 @@ package com.game.leftorrightv3;
 import java.util.Random;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -159,7 +160,14 @@ public class NewGame extends Activity {
 	}
 
 	public void endGame(View view){
-		setResult(0);
+		Intent i = new Intent();
+		i.putExtra("itemsFound", itemsFound);
+		if(alive){
+			setResult(1, i);
+		}
+		else{
+			setResult(0, i);
+		}
 		finish();
 	}
 

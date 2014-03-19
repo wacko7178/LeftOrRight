@@ -9,11 +9,17 @@ import android.view.View;
 public class StartMenu extends Activity {
 
 	public static final int numberOfItems = 16;
+	public Gallery gallery;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		
+		gallery = new Gallery();
+		gallery.readFile();
+		
 		setContentView(R.layout.activity_start_menu);
+		
 	}
 
 	@Override
@@ -32,6 +38,8 @@ public class StartMenu extends Activity {
 		} else if(resultCode == 1){
 			//win
 		}
+		int [] itemsFound = data.getExtras().getIntArray("itemsFound");
+		gallery.updateGallery(itemsFound);
 	}
 	
 	public void startClicked(View view){

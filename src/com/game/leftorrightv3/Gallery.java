@@ -8,10 +8,17 @@ public class Gallery {
 		
 	}
 	
+	public void readFile(){
+		
+	}
+	
 	public void updateGallery(int[] itemsFound){
 		for(int i = 0; i < myGallery.length; i++){
 			myGallery[i] = itemsFound[i];
 		}
 	}
 	
+	public void writeFile(){
+		
+	}
 }
