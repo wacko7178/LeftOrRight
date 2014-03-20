@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
+import android.widget.TextView;
 
 public class Extras extends Activity {
 
@@ -12,8 +13,9 @@ public class Extras extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		galleryItems = this.getIntent().getIntArrayExtra("galleryItems");
 		setContentView(R.layout.activity_extras);
-		galleryItems = savedInstanceState.getIntArray("galleryItems");
+		
 	}
 
 	@Override
@@ -40,9 +42,12 @@ public class Extras extends Activity {
 				text += "?\n";
 			}
 			else{
-				text += StartMenu.items[i] + " x " + galleryItems[i];
+				text += StartMenu.items[i] + " x " + galleryItems[i] + "\n";
 			}
 		}
+		
+		TextView textView = (TextView)findViewById(R.id.itemsText);
+		textView.setText(text);
 	}
 	
 	
