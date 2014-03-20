@@ -1,9 +1,10 @@
 package com.game.leftorrightv3;
 
+import java.util.ArrayList;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 
@@ -14,15 +15,19 @@ public class StartMenu extends Activity {
 		"Buffalo sauce", "Doughnut", "Ferret", "Do Not Remove tag", "Alien ray gun", "Fire dino", "Water Dino", "Tennis ball"};
 	public Gallery gallery;
 	public LogBook logBook;
+	private GameState staticGame;
+	
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
+		staticGame = new GameState(this);
+		
 		gallery = new Gallery(this);
 		gallery.readFile();
 		
-		logBook = new LogBook();
+		logBook = new LogBook(staticGame.buildLogbook());
 		logBook.readFile();
 		
 		setContentView(R.layout.activity_start_menu);
@@ -46,7 +51,9 @@ public class StartMenu extends Activity {
 			//win
 		}
 		int [] itemsFound = data.getExtras().getIntArray("itemsFound");
+		ArrayList<String> logsFound = data.getExtras().getStringArrayList("logsFound");
 		gallery.updateGallery(itemsFound);
+		logBook.updateMyLogs(logsFound);
 	}
 	
 	public void startClicked(View view){
@@ -66,6 +73,8 @@ public class StartMenu extends Activity {
 		//StartExtras
 		Intent viewExtras = new Intent(this, Extras.class);
 		viewExtras.putExtra("galleryItems", gallery.getMyGallery());
+		viewExtras.putExtra("logItems", logBook.getMyLogs());
+		viewExtras.putExtra("logValues", logBook.getSceneChoiceNum());
 		startActivity(viewExtras);
 	}
 	

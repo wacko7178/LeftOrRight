@@ -1,5 +1,6 @@
 package com.game.leftorrightv3;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 import android.app.Activity;
@@ -19,6 +20,7 @@ public class NewGame extends Activity {
 	int currentChoice;
 	int currentNeeded;
 	int[] itemsFound;
+	ArrayList<String> logsFound;
 	boolean alive;
 
 	@Override
@@ -32,6 +34,7 @@ public class NewGame extends Activity {
 		currentChoice = 0;
 		currentNeeded = 0;
 		itemsFound = new int[StartMenu.numberOfItems];
+		logsFound = new ArrayList<String>();
 		alive = true;
 
 		Scene startScene = game.pickScene(0);
@@ -53,6 +56,7 @@ public class NewGame extends Activity {
 	public void choiceMade(View view){
 		String response = "";
 		choices c = currentScene.choice.get(currentChoice);
+		int toReceive = 0;
 		if(view.getId() == R.id.left){
 			response = c.response1;
 			alive = c.alive1;
@@ -60,7 +64,7 @@ public class NewGame extends Activity {
 				game.items[currentScene.itemsNeeded.get(currentNeeded).itemIndex]--;
 			}
 			if(c.itemResp1 == 0){ //This does not work for the dinner table!...yet
-				int toReceive = currentScene.itemsRecieved.get(0);
+				toReceive = currentScene.itemsRecieved.get(0);
 				int count = 0;
 				if(currentScene.itemsRecieved.get(0) == 99){
 					Random r = new Random();
@@ -80,9 +84,10 @@ public class NewGame extends Activity {
 					game.items[toReceive]++;
 					itemsFound[toReceive]++;
 				}
-					
+				
 			}
-			 
+			String newLog = currentScene.name + "." + c.string1 + "." + alive;
+			logsFound.add(newLog);
 		} else{
 			response = c.response2;
 			alive = c.alive2;
@@ -90,7 +95,7 @@ public class NewGame extends Activity {
 				game.items[currentScene.itemsNeeded.get(currentNeeded).itemIndex]--;
 			}
 			if(c.itemResp2 == 0){ //This does not work for the dinner table!...yet
-				int toReceive = currentScene.itemsRecieved.get(0);
+				toReceive = currentScene.itemsRecieved.get(0);
 				int count = 0;
 				if(currentScene.itemsRecieved.get(0) == 99){
 					Random r = new Random();
@@ -111,6 +116,8 @@ public class NewGame extends Activity {
 					itemsFound[toReceive]++;
 				}				
 			}
+			String newLog = currentScene.name + "." + c.string2 + "." + alive;
+			logsFound.add(newLog);
 		} 
 		if(alive){
 			setContentView(R.layout.after_choice);
@@ -162,6 +169,7 @@ public class NewGame extends Activity {
 	public void endGame(View view){
 		Intent i = new Intent();
 		i.putExtra("itemsFound", itemsFound);
+		i.putExtra("logsFound", logsFound);
 		if(alive){
 			setResult(1, i);
 		}

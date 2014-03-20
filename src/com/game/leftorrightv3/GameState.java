@@ -120,6 +120,28 @@ public class GameState {
 		scenarios.remove(index);
 		return toReturn;
 	}
+	
+	public ArrayList<String> buildLogbook(){
+		
+		ArrayList<String> toReturn = new ArrayList<String>();
+		
+		for(int i = 0;  i < scenarios.size(); i++){
+			Scene currScene = scenarios.get(i);
+			for(int j = 0; j < currScene.choice.size(); j++){
+				choices currChoice = currScene.choice.get(j);
+				String newLog1 = currScene.name + "." + currChoice.string1 + "." + currChoice.alive1;
+				String newLog2 = currScene.name + "." + currChoice.string2 + "." + currChoice.alive2;
+				if(!toReturn.contains(newLog1)){
+					toReturn.add(newLog1);
+				}
+				if(!toReturn.contains(newLog2)){
+					toReturn.add(newLog2);
+				}
+			}
+		}
+	
+		return toReturn;
+	}
 	//	public static void main(String[] args){
 	//		GameState gS = new GameState();
 	//		for(int i = 0; i< gS.scenarios.size(); i++){

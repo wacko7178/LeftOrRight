@@ -1,5 +1,7 @@
 package com.game.leftorrightv3;
 
+import java.util.ArrayList;
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -9,11 +11,16 @@ import android.widget.TextView;
 public class Extras extends Activity {
 
 	private int[] galleryItems;
+	private ArrayList<String> logItems;
+	private int[] logValues;
+	static final String space = "[ ]+";
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		galleryItems = this.getIntent().getIntArrayExtra("galleryItems");
+		logItems = this.getIntent().getStringArrayListExtra("logItems");
+		logValues = this.getIntent().getIntArrayExtra("logValues");
 		setContentView(R.layout.activity_extras);
 		
 	}
@@ -26,7 +33,27 @@ public class Extras extends Activity {
 	}
 
 	public void logbookClicked(View view){
+		setContentView(R.layout.gallery_layout);
+		fillLogText();
+	}
+	
+	public void fillLogText(){
+		String text = "";
 		
+		for (int i = 0; i < logItems.size(); i++){
+			String newLog = logItems.get(i);
+			String[] logArr = newLog.split("\\.");
+			if(logValues[i] == 0){
+				text += "???????\n";
+			}
+			else{
+				text += logArr[0] + " + " + logArr[1] + " = " + logArr[2] + " x " + logValues[i] + "\n";
+			}
+			
+		}
+		
+		TextView textView = (TextView)findViewById(R.id.itemsText);
+		textView.setText(text);
 	}
 	
 	public void galleryClicked(View view){

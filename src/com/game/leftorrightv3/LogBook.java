@@ -8,20 +8,25 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.util.ArrayList;
 
-import android.content.Context;
-import android.content.res.AssetManager;
 import android.os.Environment;
+import android.util.Log;
 
 public class LogBook {
 
 
 	private String externalStoragePath;
 	private String logbookFile = ".logbookFile";
-	
-	public LogBook(){
+	private ArrayList<String> myLogs;
+	private int[] sceneChoiceNum;
+	private final int numberOfSceneChoices = 95; //Through cop scene
+	public LogBook(ArrayList<String> logEntries){
 		this.externalStoragePath = Environment.getExternalStorageDirectory()
 				.getAbsolutePath() + File.separator;
+		myLogs = new ArrayList<String>();
+		myLogs.addAll(logEntries);
+		sceneChoiceNum = new int[numberOfSceneChoices];
 	}
 	
 	public void readFile(){
@@ -59,5 +64,21 @@ public class LogBook {
 				
 			}
 		}
+	}
+	
+	public void updateMyLogs(ArrayList<String> newLogs){
+		for(int i = 0; i < newLogs.size(); i++){
+			int indexOfLog = myLogs.indexOf(newLogs.get(i));
+			sceneChoiceNum[indexOfLog]++;
+		}
+		
+	}
+	
+	public ArrayList<String> getMyLogs(){
+		return myLogs;
+	}
+	
+	public int[] getSceneChoiceNum(){
+		return sceneChoiceNum;
 	}
 }
