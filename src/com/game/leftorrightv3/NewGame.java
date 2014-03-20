@@ -78,7 +78,7 @@ public class NewGame extends Activity {
 				}
 				else{
 					game.items[toReceive]++;
-					itemsFound[0]++;
+					itemsFound[toReceive]++;
 				}
 					
 			}

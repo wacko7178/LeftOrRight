@@ -20,17 +20,11 @@ public class Gallery {
 
 	private final int [] myGallery = new int[StartMenu.numberOfItems]; 
 	
-	private String externalStoragePath;
 	private String galleryFile = "galleryFile";
 	private Context context;
 		
 	public Gallery(Context context){
 		this.context = context;
-		Arrays.fill(myGallery, 1);
-		this.externalStoragePath = Environment.getExternalStorageDirectory()
-				.getAbsolutePath() + File.separator;
-		writeFile();
-		readFile();
 	}
 	
 	public void readFile(){
@@ -41,8 +35,8 @@ public class Gallery {
 		try{
 			in = new BufferedReader(new FileReader(new File(context.getFilesDir() + File.separator + galleryFile)));
 			for(int i = 0; i < StartMenu.numberOfItems; i++){
-				myGallery[i] = 0;//Integer.parseInt(in.readLine());
-				Log.d("Am I here", "For realz");
+				//Log.d("File stuff: ", in.readLine());
+				myGallery[i] = Integer.parseInt(in.readLine());//Integer.parseInt(in.readLine());
 			}
 		}catch(IOException e){	
 			e.printStackTrace();
@@ -63,9 +57,10 @@ public class Gallery {
 	public void writeFile(){
 		BufferedWriter bufferedWriter = null;
 		try{
-			bufferedWriter = new BufferedWriter(new FileWriter(new File(context.getFilesDir() + File.separator+galleryFile)));
+			bufferedWriter = new BufferedWriter(new FileWriter(new File(context.getFilesDir() + File.separator + galleryFile)));
 			for(int i = 0; i < StartMenu.numberOfItems; i++){
-				bufferedWriter.write(myGallery[i]); // .write(Integer.toString(myGallery[i]));
+				bufferedWriter.write(String.valueOf(myGallery[i])); 
+				bufferedWriter.newLine();
 			}
 		}catch(IOException e){
 			e.printStackTrace();

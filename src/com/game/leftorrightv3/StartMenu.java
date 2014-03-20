@@ -59,6 +59,7 @@ public class StartMenu extends Activity {
 		//StartSettings
 		//NOT SETTINGS
 		gallery.writeFile();
+		gallery.readFile();
 	}
 	
 	public void extrasClicked(View view){
