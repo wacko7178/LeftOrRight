@@ -4,30 +4,30 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
 
-import android.os.Environment;
+import android.content.Context;
 
 public class Gallery {
 
 	private final int [] myGallery = new int[StartMenu.numberOfItems]; 
 	
 	private String externalStoragePath;
-	private String galleryFile = ".galleryFile";
-	
-	public Gallery(){
+	private String galleryFile = "galleryFile";
+	private Context context;
 		
-		this.externalStoragePath = Environment.getExternalStorageDirectory()
-				.getAbsolutePath() + File.separator;
+	public Gallery(Context context){
+		this.context = context;
 	}
-
+	
 	public void readFile(){
 		BufferedReader in = null;
+		String read;
+		StringBuilder builder = new StringBuilder("");
 		try{
-			in = new BufferedReader(new InputStreamReader(new FileInputStream(externalStoragePath + galleryFile)));
+			in = new BufferedReader(new FileReader(new File(context.getFilesDir() + File.separator + galleryFile)));
 			for(int i = 0; i < StartMenu.numberOfItems; i++){
 				myGallery[i] = Integer.parseInt(in.readLine());
 			}
@@ -47,18 +47,18 @@ public class Gallery {
 	}
 	
 	public void writeFile(){
-		BufferedWriter out = null;
+		BufferedWriter bufferedWriter = null;
 		try{
-			out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(externalStoragePath + galleryFile)));
+			bufferedWriter = new BufferedWriter(new FileWriter(new File(context.getFilesDir() + File.separator+galleryFile)));
 			for(int i = 0; i < StartMenu.numberOfItems; i++){
-				out.write(Integer.toString(myGallery[i]));
+				bufferedWriter.write(myGallery[i]); // .write(Integer.toString(myGallery[i]));
 			}
 		}catch(IOException e){
 			
 		}finally{
 			try{
-				if(out != null)
-					out.close();
+				if(bufferedWriter != null)
+					bufferedWriter.close();
 			}catch(IOException e){
 				
 			}
