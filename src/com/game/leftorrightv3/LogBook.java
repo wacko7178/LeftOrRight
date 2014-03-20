@@ -3,27 +3,26 @@ package com.game.leftorrightv3;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 
-import android.os.Environment;
-import android.util.Log;
+import android.content.Context;
 
 public class LogBook {
 
 
-	private String externalStoragePath;
-	private String logbookFile = ".logbookFile";
+	private String logbookFile = "logbookFile";
 	private ArrayList<String> myLogs;
 	private int[] sceneChoiceNum;
 	private final int numberOfSceneChoices = 95; //Through cop scene
-	public LogBook(ArrayList<String> logEntries){
-		this.externalStoragePath = Environment.getExternalStorageDirectory()
-				.getAbsolutePath() + File.separator;
+	private Context context;
+	
+	public LogBook(Context context, ArrayList<String> logEntries){
+		this.context = context;
 		myLogs = new ArrayList<String>();
 		myLogs.addAll(logEntries);
 		sceneChoiceNum = new int[numberOfSceneChoices];
@@ -32,8 +31,11 @@ public class LogBook {
 	public void readFile(){
 		BufferedReader in = null;
 		try{
-			in = new BufferedReader(new InputStreamReader(new FileInputStream(externalStoragePath + logbookFile)));
-			
+			in = new BufferedReader(new FileReader(new File(context.getFilesDir() + File.separator + logbookFile)));
+			for(int i = 0; i < numberOfSceneChoices; i++){
+				//Log.d("File stuff: ", in.readLine());
+				sceneChoiceNum[i] = Integer.parseInt(in.readLine());//Integer.parseInt(in.readLine());
+			}
 		}catch(IOException e){			
 		}catch(NumberFormatException e){
 
@@ -50,16 +52,19 @@ public class LogBook {
 	}
 	
 	public void writeFile(){
-		BufferedWriter out = null;
+		BufferedWriter bufferedWriter = null;
 		try{
-			out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(externalStoragePath + logbookFile)));
-			
+			bufferedWriter = new BufferedWriter(new FileWriter(new File(context.getFilesDir() + File.separator + logbookFile)));
+			for(int i = 0; i < numberOfSceneChoices; i++){
+				bufferedWriter.write(String.valueOf(sceneChoiceNum[i])); 
+				bufferedWriter.newLine();
+			}
 		}catch(IOException e){
 			
 		}finally{
 			try{
-				if(out != null)
-					out.close();
+				if(bufferedWriter != null)
+					bufferedWriter.close();
 			}catch(IOException e){
 				
 			}

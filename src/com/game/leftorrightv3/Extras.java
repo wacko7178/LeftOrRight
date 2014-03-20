@@ -47,7 +47,14 @@ public class Extras extends Activity {
 				text += "???????\n";
 			}
 			else{
-				text += logArr[0] + " + " + logArr[1] + " = " + logArr[2] + " x " + logValues[i] + "\n";
+				text += logArr[0] + " + " + logArr[1] + " = ";
+				if(logArr[2].equals("true")){
+					text += "Alive! 8D";
+				}
+				else{
+					text += "Dead...X(";
+				}
+				text += " x " + logValues[i] + "\n";
 			}
 			
 		}

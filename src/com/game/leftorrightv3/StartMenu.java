@@ -27,7 +27,7 @@ public class StartMenu extends Activity {
 		gallery = new Gallery(this);
 		gallery.readFile();
 		
-		logBook = new LogBook(staticGame.buildLogbook());
+		logBook = new LogBook(this, staticGame.buildLogbook());
 		logBook.readFile();
 		
 		setContentView(R.layout.activity_start_menu);
@@ -66,7 +66,7 @@ public class StartMenu extends Activity {
 		//StartSettings
 		//NOT SETTINGS
 		gallery.writeFile();
-		gallery.readFile();
+		logBook.writeFile();
 	}
 	
 	public void extrasClicked(View view){

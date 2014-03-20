@@ -30,8 +30,7 @@ public class Gallery {
 	public void readFile(){
 		
 		BufferedReader in = null;
-		String read;
-		StringBuilder builder = new StringBuilder("");
+		
 		try{
 			in = new BufferedReader(new FileReader(new File(context.getFilesDir() + File.separator + galleryFile)));
 			for(int i = 0; i < StartMenu.numberOfItems; i++){
