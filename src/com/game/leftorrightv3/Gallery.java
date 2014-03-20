@@ -71,5 +71,8 @@ public class Gallery {
 		}
 	}
 	
+	public int[] getMyGallery(){
+		return myGallery;
+	}
 	
 }

@@ -9,6 +9,8 @@ import android.view.View;
 public class StartMenu extends Activity {
 
 	public static final int numberOfItems = 16;
+	public static final String[] items = {"Key", "Baby bottle", "Dog", "T-Rex", "Liquid ice", "Silver bat", "Shrinkage", "Sushi roll",
+		"Buffalo sauce", "Doughnut", "Ferret", "Do Not Remove tag", "Alien ray gun", "Fire dino", "Water Dino", "Tennis ball"};
 	public Gallery gallery;
 	public LogBook logBook;
 	
@@ -59,6 +61,9 @@ public class StartMenu extends Activity {
 	
 	public void extrasClicked(View view){
 		//StartExtras
+		Intent viewExtras = new Intent();
+		viewExtras.putExtra("galleryItems", gallery.getMyGallery());
+		startActivity(viewExtras);
 	}
 	
 }
