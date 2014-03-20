@@ -9,6 +9,12 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 import android.content.Context;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.util.Arrays;
+
+import android.os.Environment;
+import android.util.Log;
 
 public class Gallery {
 
@@ -20,18 +26,26 @@ public class Gallery {
 		
 	public Gallery(Context context){
 		this.context = context;
+		Arrays.fill(myGallery, 1);
+		this.externalStoragePath = Environment.getExternalStorageDirectory()
+				.getAbsolutePath() + File.separator;
+		writeFile();
+		readFile();
 	}
 	
 	public void readFile(){
+		
 		BufferedReader in = null;
 		String read;
 		StringBuilder builder = new StringBuilder("");
 		try{
 			in = new BufferedReader(new FileReader(new File(context.getFilesDir() + File.separator + galleryFile)));
 			for(int i = 0; i < StartMenu.numberOfItems; i++){
-				myGallery[i] = Integer.parseInt(in.readLine());
+				myGallery[i] = 0;//Integer.parseInt(in.readLine());
+				Log.d("Am I here", "For realz");
 			}
-		}catch(IOException e){			
+		}catch(IOException e){	
+			e.printStackTrace();
 		}catch(NumberFormatException e){
 
 		}finally{
@@ -40,7 +54,7 @@ public class Gallery {
 					in.close();
 				}
 			}catch(IOException e){
-
+				e.printStackTrace();
 			}
 		}
 		
@@ -54,7 +68,7 @@ public class Gallery {
 				bufferedWriter.write(myGallery[i]); // .write(Integer.toString(myGallery[i]));
 			}
 		}catch(IOException e){
-			
+			e.printStackTrace();
 		}finally{
 			try{
 				if(bufferedWriter != null)
@@ -67,7 +81,7 @@ public class Gallery {
 	
 	public void updateGallery(int[] itemsFound){
 		for(int i = 0; i < myGallery.length; i++){
-			myGallery[i] = itemsFound[i];
+			myGallery[i] += itemsFound[i];
 		}
 	}
 	

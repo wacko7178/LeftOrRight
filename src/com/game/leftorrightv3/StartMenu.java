@@ -3,6 +3,7 @@ package com.game.leftorrightv3;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 
@@ -56,12 +57,13 @@ public class StartMenu extends Activity {
 	
 	public void settingsClicked(View view){
 		//StartSettings
-		
+		//NOT SETTINGS
+		gallery.writeFile();
 	}
 	
 	public void extrasClicked(View view){
 		//StartExtras
-		Intent viewExtras = new Intent();
+		Intent viewExtras = new Intent(this, Extras.class);
 		viewExtras.putExtra("galleryItems", gallery.getMyGallery());
 		startActivity(viewExtras);
 	}
