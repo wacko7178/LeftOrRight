@@ -8,6 +8,10 @@
 package com.game.leftorrightv3;
 
 public final class R {
+    public static final class animator {
+        public static final int anim_left=0x7f040000;
+        public static final int anim_right=0x7f040001;
+    }
     public static final class attr {
     }
     public static final class dimen {
@@ -17,28 +21,41 @@ public final class R {
          screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
     
          */
-        public static final int activity_horizontal_margin=0x7f040000;
-        public static final int activity_vertical_margin=0x7f040001;
+        public static final int activity_horizontal_margin=0x7f050000;
+        public static final int activity_vertical_margin=0x7f050001;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
+        public static final int boxbutton=0x7f020000;
+        public static final int boxbuttonclicked=0x7f020001;
+        public static final int button_layout=0x7f020002;
+        public static final int cyclops=0x7f020003;
+        public static final int cyclopspath=0x7f020004;
+        public static final int cyclopspath2=0x7f020005;
+        public static final int ic_launcher=0x7f020006;
+        public static final int leftorright=0x7f020007;
+        public static final int mybutton=0x7f020008;
+        public static final int mygoodbutton=0x7f020009;
+        public static final int rectbutton=0x7f02000a;
+        public static final int rectbuttonclicked=0x7f02000b;
+        public static final int square_button_layout=0x7f02000c;
     }
     public static final class id {
-        public static final int ExtrasButton=0x7f080008;
-        public static final int Screen=0x7f080005;
-        public static final int SettingsButton=0x7f080007;
-        public static final int StartButton=0x7f080006;
-        public static final int action_settings=0x7f08000e;
-        public static final int continueOn=0x7f08000a;
-        public static final int gamePic=0x7f080002;
-        public static final int goHome=0x7f08000d;
-        public static final int itemsText=0x7f08000c;
-        public static final int left=0x7f080003;
-        public static final int right=0x7f080004;
-        public static final int scrollText=0x7f08000b;
-        public static final int viewGallery=0x7f080001;
-        public static final int viewLogbook=0x7f080000;
-        public static final int whatHappened=0x7f080009;
+        public static final int ExtrasButton=0x7f090009;
+        public static final int ExtrasScreen=0x7f090000;
+        public static final int Screen=0x7f090006;
+        public static final int SettingsButton=0x7f090008;
+        public static final int StartButton=0x7f090007;
+        public static final int action_settings=0x7f09000f;
+        public static final int continueOn=0x7f09000b;
+        public static final int gamePic=0x7f090003;
+        public static final int goHome=0x7f09000e;
+        public static final int itemsText=0x7f09000d;
+        public static final int left=0x7f090004;
+        public static final int right=0x7f090005;
+        public static final int scrollText=0x7f09000c;
+        public static final int viewGallery=0x7f090002;
+        public static final int viewLogbook=0x7f090001;
+        public static final int whatHappened=0x7f09000a;
     }
     public static final class layout {
         public static final int activity_extras=0x7f030000;
@@ -51,20 +68,20 @@ public final class R {
         public static final int vinning=0x7f030007;
     }
     public static final class menu {
-        public static final int extras=0x7f070000;
-        public static final int main=0x7f070001;
-        public static final int main_menu=0x7f070002;
-        public static final int new_game=0x7f070003;
-        public static final int q=0x7f070004;
-        public static final int start_menu=0x7f070005;
+        public static final int extras=0x7f080000;
+        public static final int main=0x7f080001;
+        public static final int main_menu=0x7f080002;
+        public static final int new_game=0x7f080003;
+        public static final int q=0x7f080004;
+        public static final int start_menu=0x7f080005;
     }
     public static final class string {
-        public static final int action_settings=0x7f050001;
-        public static final int app_name=0x7f050000;
-        public static final int hello_world=0x7f050002;
-        public static final int title_activity_extras=0x7f050005;
-        public static final int title_activity_main=0x7f050003;
-        public static final int title_activity_q=0x7f050004;
+        public static final int action_settings=0x7f060001;
+        public static final int app_name=0x7f060000;
+        public static final int hello_world=0x7f060002;
+        public static final int title_activity_extras=0x7f060005;
+        public static final int title_activity_main=0x7f060003;
+        public static final int title_activity_q=0x7f060004;
     }
     public static final class style {
         /** 
@@ -88,10 +105,10 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f060000;
+        public static final int AppBaseTheme=0x7f070000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f060001;
+        public static final int AppTheme=0x7f070001;
     }
 }

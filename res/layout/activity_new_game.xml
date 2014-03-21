@@ -11,6 +11,8 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_weight=".5"
+        android:clickable="false"
+        android:background="#FFFFFF"
         android:text="Picture" >
     </Button>
 
@@ -26,16 +28,20 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight="1"
+            android:background="@drawable/button_layout"
+            android:onClick="choiceMade"
             android:text="left"
-            android:onClick="choiceMade"/>
+            android:textColor="#FFFFFF" />
 
         <Button
             android:id="@+id/right"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight="1"
+            android:background="@drawable/button_layout"
+            android:onClick="choiceMade"
             android:text="right"
-            android:onClick="choiceMade"/>
+            android:textColor="#FFFFFF" />
     </LinearLayout>
 
 </LinearLayout>

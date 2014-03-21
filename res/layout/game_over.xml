@@ -11,6 +11,8 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_weight=".5"
+        android:clickable="false"
+        android:background="#FFFFFF"
         android:text="GAMEOVER" >
     </Button>
 
@@ -19,6 +21,8 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight="2"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_layout"
             android:text="Go home, you're drunk"
             android:onClick="endGame"/>
 

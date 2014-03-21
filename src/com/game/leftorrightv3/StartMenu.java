@@ -50,10 +50,12 @@ public class StartMenu extends Activity {
 		} else if(resultCode == 1){
 			//win
 		}
-		int [] itemsFound = data.getExtras().getIntArray("itemsFound");
-		ArrayList<String> logsFound = data.getExtras().getStringArrayList("logsFound");
-		gallery.updateGallery(itemsFound);
-		logBook.updateMyLogs(logsFound);
+		if(data != null){
+			int [] itemsFound = data.getExtras().getIntArray("itemsFound");
+			ArrayList<String> logsFound = data.getExtras().getStringArrayList("logsFound");
+			gallery.updateGallery(itemsFound);
+			logBook.updateMyLogs(logsFound);
+		}
 	}
 	
 	public void startClicked(View view){
