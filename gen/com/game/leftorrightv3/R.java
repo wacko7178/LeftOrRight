@@ -41,6 +41,7 @@ public final class R {
         public static final int smallcyclopspath=0x7f02000d;
         public static final int smallleftorright=0x7f02000e;
         public static final int square_button_layout=0x7f02000f;
+        public static final int widthsmallleftorright=0x7f020010;
     }
     public static final class id {
         public static final int ExtrasButton=0x7f090009;

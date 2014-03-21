@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.TextView;
 
 public class Extras extends Activity {
@@ -19,6 +21,13 @@ public class Extras extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		//Remove title bar
+	    this.requestWindowFeature(Window.FEATURE_NO_TITLE);
+
+	    //Remove notification bar
+	    this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+		
+		
 		galleryItems = this.getIntent().getIntArrayExtra("galleryItems");
 		logItems = this.getIntent().getStringArrayListExtra("logItems");
 		logValues = this.getIntent().getIntArrayExtra("logValues");
