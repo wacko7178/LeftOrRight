@@ -39,7 +39,8 @@
         </activity>
         <activity
             android:name="com.game.leftorrightv3.Extras"
-            android:label="@string/title_activity_extras" >
+            android:label="@string/title_activity_extras"
+            android:screenOrientation="portrait" > >
         </activity>
     </application>
 

@@ -6,6 +6,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class Extras extends Activity {
@@ -30,6 +31,20 @@ public class Extras extends Activity {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.extras, menu);
 		return true;
+	}
+	
+	@Override
+	public void onBackPressed(){
+		try{
+			Button test = (Button)findViewById(R.id.viewLogbook);
+			test.setText("Logbook");
+			super.onBackPressed();
+		}
+		catch(Exception e){
+			//
+			setContentView(R.layout.activity_extras);
+		}
+		
 	}
 
 	public void logbookClicked(View view){

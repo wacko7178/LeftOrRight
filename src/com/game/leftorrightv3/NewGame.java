@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Random;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -22,6 +24,7 @@ public class NewGame extends Activity {
 	int[] itemsFound;
 	ArrayList<String> logsFound;
 	boolean alive;
+	boolean exit;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +39,7 @@ public class NewGame extends Activity {
 		itemsFound = new int[StartMenu.numberOfItems];
 		logsFound = new ArrayList<String>();
 		alive = true;
+		exit = false;
 
 		Scene startScene = game.pickScene(0);
 		currentScene = startScene;
@@ -52,6 +56,26 @@ public class NewGame extends Activity {
 		getMenuInflater().inflate(R.menu.new_game, menu);
 		return true;
 	}
+	
+	@Override
+	public void onBackPressed(){
+		new AlertDialog.Builder(this)
+	    .setTitle("Exit game")
+	    .setMessage("Are you sure you want to exit the game?\nAll progress will be lost!")
+	    .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+	        public void onClick(DialogInterface dialog, int which) { 
+	            // continue with delete
+	        	exit = true;
+	        	endGame(null);
+	        }
+	     })
+	    .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
+	        public void onClick(DialogInterface dialog, int which) { 
+	            // do nothing
+	        }
+	     })
+	     .show();
+	}
 
 	public void choiceMade(View view){
 		String response = "";
@@ -64,9 +88,16 @@ public class NewGame extends Activity {
 				game.items[currentScene.itemsNeeded.get(currentNeeded).itemIndex]--;
 			}
 			if(c.itemResp1 == 0){ //This does not work for the dinner table!...yet
-				toReceive = currentScene.itemsRecieved.get(0);
+				if(c.itemIndex1 == currentScene.itemsRecieved.size()){
+					Random r = new Random();
+					int rand = r.nextInt(100)%c.itemIndex1;
+					toReceive = currentScene.itemsRecieved.get(rand);
+				}
+				else{
+					toReceive = currentScene.itemsRecieved.get(c.itemIndex1);
+				}
 				int count = 0;
-				if(currentScene.itemsRecieved.get(0) == 99){
+				if(toReceive == 99){
 					Random r = new Random();
 					
 					toReceive = r.nextInt(StartMenu.numberOfItems);
@@ -79,13 +110,17 @@ public class NewGame extends Activity {
 				if(count == 16){
 					game.items[0]++;
 					itemsFound[0]++;
+					toReceive = 0;
 				}
 				else{
 					game.items[toReceive]++;
 					itemsFound[toReceive]++;
 				}
-				
+				response = "You got a " + StartMenu.items[toReceive] + "!!";
 			}
+			
+			
+			
 			String newLog = currentScene.name + "." + c.string1 + "." + alive;
 			logsFound.add(newLog);
 		} else{
@@ -95,9 +130,17 @@ public class NewGame extends Activity {
 				game.items[currentScene.itemsNeeded.get(currentNeeded).itemIndex]--;
 			}
 			if(c.itemResp2 == 0){ //This does not work for the dinner table!...yet
-				toReceive = currentScene.itemsRecieved.get(0);
+				if(c.itemIndex2 == currentScene.itemsRecieved.size()){
+					Random r = new Random();
+					int rand = r.nextInt(100)%c.itemIndex2;
+					toReceive = currentScene.itemsRecieved.get(rand);
+				}
+				else{
+					toReceive = currentScene.itemsRecieved.get(c.itemIndex2);
+				}
+				
 				int count = 0;
-				if(currentScene.itemsRecieved.get(0) == 99){
+				if(toReceive == 99){
 					Random r = new Random();
 					
 					toReceive = r.nextInt(StartMenu.numberOfItems);
@@ -110,12 +153,16 @@ public class NewGame extends Activity {
 				if(count == 16){
 					game.items[0]++;
 					itemsFound[0]++;
+					toReceive = 0;
 				}
 				else{
 					game.items[toReceive]++;
 					itemsFound[toReceive]++;
-				}				
+				}	
+				response = "You got a " + StartMenu.items[toReceive] + "!!";
 			}
+			
+			
 			String newLog = currentScene.name + "." + c.string2 + "." + alive;
 			logsFound.add(newLog);
 		} 
@@ -127,7 +174,7 @@ public class NewGame extends Activity {
 			setContentView(R.layout.game_over);
 		}
 	}
-
+	
 	public void getNextScene(View view){
 		Scene nextScene = game.pickScene();
 		if(nextScene != null){
@@ -170,7 +217,10 @@ public class NewGame extends Activity {
 		Intent i = new Intent();
 		i.putExtra("itemsFound", itemsFound);
 		i.putExtra("logsFound", logsFound);
-		if(alive){
+		if(exit){
+			setResult(2, i);
+		}
+		else if(alive){
 			setResult(1, i);
 		}
 		else{

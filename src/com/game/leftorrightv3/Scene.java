@@ -34,19 +34,25 @@ public class Scene {
 			String currName = sF.next();
 			if(currName.startsWith(name)){
 				itemsRecieved.add(Integer.parseInt(sF.next()));					
-				String currItem = sF.next();
-				if(currItem.equals("^")){
+				String currItem = "";
+				
+				while(!currItem.equals("^")){
 					currItem = sF.next();
-					while(!currItem.startsWith("*") && sF.hasNext()){
-						itemsNeeded.add(new tuple(Integer.parseInt(currItem), Integer.parseInt(sF.next())));
-						if(sF.hasNext()){
-							currItem = sF.next();
-						}
+					if(!currItem.equals("^")){
+						itemsRecieved.add(Integer.parseInt(currItem));
 					}
 				}
-				
+
+				currItem = sF.next();
+				while(!currItem.startsWith("*") && sF.hasNext()){
+					itemsNeeded.add(new tuple(Integer.parseInt(currItem), Integer.parseInt(sF.next())));
+					if(sF.hasNext()){
+						currItem = sF.next();
+					}
+				}
+
 			}
-			
+
 		}
 		sF.close();
 		

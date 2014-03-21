@@ -55,6 +55,8 @@ public class StartMenu extends Activity {
 			ArrayList<String> logsFound = data.getExtras().getStringArrayList("logsFound");
 			gallery.updateGallery(itemsFound);
 			logBook.updateMyLogs(logsFound);
+			gallery.writeFile();
+			logBook.writeFile();
 		}
 	}
 	

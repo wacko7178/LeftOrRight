@@ -9,6 +9,8 @@ package com.game.leftorrightv3;
 		int itemResp2;
 		int itemUsed1;
 		int itemUsed2;
+		int itemIndex1;
+		int itemIndex2;
 		boolean alive1;
 		boolean alive2;
 		
@@ -17,7 +19,7 @@ package com.game.leftorrightv3;
 			string2 = right;			
 		}
 		
-		public void setResponse1(String res1, int itemResp, int stillAlive, int itemUsed){
+		public void setResponse1(String res1, int itemResp, int stillAlive, int itemUsed, int itemIndex){
 			response1 = res1;
 			itemUsed1 = itemUsed;
 			this.itemResp1 = itemResp;
@@ -34,6 +36,7 @@ package com.game.leftorrightv3;
 			itemUsed1 = Integer.parseInt(ints[2]);
 			this.itemResp1 = Integer.parseInt(ints[0]);
 			int stillAlive = Integer.parseInt(ints[1]);
+			itemIndex1 = Integer.parseInt(ints[3]);
 			if(stillAlive == 0){
 				alive1 = true;
 			} else{
@@ -41,7 +44,7 @@ package com.game.leftorrightv3;
 			}
 		}
 		
-		public void setResponse2(String res2, int itemResp, int stillAlive, int itemUsed){
+		public void setResponse2(String res2, int itemResp, int stillAlive, int itemUsed, int itemIndex){
 			response2 = res2;
 			itemUsed2 = itemUsed;
 			this.itemResp2 = itemResp;
@@ -58,6 +61,7 @@ package com.game.leftorrightv3;
 			itemUsed2 = Integer.parseInt(ints[2]);
 			this.itemResp2 = Integer.parseInt(ints[0]);
 			int stillAlive = Integer.parseInt(ints[1]);
+			itemIndex2 = Integer.parseInt(ints[3]);
 			if(stillAlive == 0){
 				alive2 = true;
 			} else{
