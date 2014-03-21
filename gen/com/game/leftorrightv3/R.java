@@ -37,7 +37,10 @@ public final class R {
         public static final int mygoodbutton=0x7f020009;
         public static final int rectbutton=0x7f02000a;
         public static final int rectbuttonclicked=0x7f02000b;
-        public static final int square_button_layout=0x7f02000c;
+        public static final int smallcyclops=0x7f02000c;
+        public static final int smallcyclopspath=0x7f02000d;
+        public static final int smallleftorright=0x7f02000e;
+        public static final int square_button_layout=0x7f02000f;
     }
     public static final class id {
         public static final int ExtrasButton=0x7f090009;

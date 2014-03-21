@@ -11,7 +11,7 @@
         android:id="@+id/Screen"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:src="@drawable/cyclopspath2"
+        android:src="@drawable/smallleftorright"
         android:layout_weight=".4" />
 
     <Button
