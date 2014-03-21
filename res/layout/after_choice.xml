@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText,NestedWeights" >
+
+    <Button
+        android:id="@+id/whatHappened"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFFFFF"
+        android:clickable="false"
+        android:layout_weight=".5">
+    </Button>
+
+    <Button
+        android:id="@+id/continueOn"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_layout"
+        android:onClick="getNextScene"
+        android:text="Continue on!" />
+
+</LinearLayout>

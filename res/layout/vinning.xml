@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText,NestedWeights" >
+
+    <Button
+        android:id="@+id/gamePic"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight=".5"
+         android:clickable="false"
+        android:background="#FFFFFF"
+        android:text="You are a VINNER" >
+    </Button>
+
+        <Button
+            android:id="@+id/goHome"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_layout"
+            android:text="Go home, you're drunk...on VICTORY"
+            android:onClick="endGame"/>
+
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText,NestedWeights" >
+
+    <Button
+        android:id="@+id/gamePic"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight=".5"
+        android:clickable="false"
+        android:background="#FFFFFF"
+        android:text="Picture" >
+    </Button>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="2"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/left"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_layout"
+            android:onClick="choiceMade"
+            android:text="left"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/right"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_layout"
+            android:onClick="choiceMade"
+            android:text="right"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</LinearLayout>
