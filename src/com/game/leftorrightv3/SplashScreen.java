@@ -14,14 +14,13 @@ public class SplashScreen extends Activity {
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		
-	    this.requestWindowFeature(Window.FEATURE_NO_TITLE);
+		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 
 	    //Remove notification bar
 	    this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		
-		setContentView(R.layout.activity_splash_screen);
+		super.onCreate(savedInstanceState);
+		
 
         new Handler().postDelayed(new Runnable() {
  
@@ -41,6 +40,8 @@ public class SplashScreen extends Activity {
                 finish();
             }
         }, SPLASH_TIME_OUT);
+		setContentView(R.layout.activity_splash_screen);
+
 		
 	}
 
