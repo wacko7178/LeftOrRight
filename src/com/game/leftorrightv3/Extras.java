@@ -3,13 +3,13 @@ package com.game.leftorrightv3;
 import java.util.ArrayList;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
-import android.widget.Button;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.TextView;
+import android.widget.Button;
 
 public class Extras extends Activity {
 
@@ -57,56 +57,64 @@ public class Extras extends Activity {
 	}
 
 	public void logbookClicked(View view){
-		setContentView(R.layout.gallery_layout);
-		fillLogText();
+		Intent i = new Intent(this, GalleryList.class);
+		i.putExtra("galOrLog", 1);
+		i.putExtra("logItems", logItems);
+		i.putExtra("logValues", logValues);
+		startActivity(i);
+		
 	}
 	
 	public void fillLogText(){
-		String text = "";
-		
-		for (int i = 0; i < logItems.size(); i++){
-			String newLog = logItems.get(i);
-			String[] logArr = newLog.split("\\.");
-			if(logValues[i] == 0){
-				text += "???????\n";
-			}
-			else{
-				text += logArr[0] + " + " + logArr[1] + " = ";
-				if(logArr[2].equals("true")){
-					text += "Alive! 8D";
-				}
-				else{
-					text += "Dead...X(";
-				}
-				text += " x " + logValues[i] + "\n";
-			}
-			
-		}
-		
-		TextView textView = (TextView)findViewById(R.id.itemsText);
-		textView.setText(text);
+//		String text = "";
+//		
+//		for (int i = 0; i < logItems.size(); i++){
+//			String newLog = logItems.get(i);
+//			String[] logArr = newLog.split("\\.");
+//			if(logValues[i] == 0){
+//				text += "???????\n";
+//			}
+//			else{
+//				text += logArr[0] + " + " + logArr[1] + " = ";
+//				if(logArr[2].equals("true")){
+//					text += "Alive! 8D";
+//				}
+//				else{
+//					text += "Dead...X(";
+//				}
+//				text += " x " + logValues[i] + "\n";
+//			}
+//			
+//		}
+//		
+//		TextView textView = (TextView)findViewById(R.id.itemsText);
+//		textView.setText(text);
 	}
 	
 	public void galleryClicked(View view){
-		setContentView(R.layout.gallery_layout);
-		fillGalleryText();
+//		setContentView(R.layout.gallery_layout);
+//		fillGalleryText();
+		Intent i = new Intent(this, GalleryList.class);
+		i.putExtra("galOrLog", 0);
+		i.putExtra("itemsFound", galleryItems);
+		startActivity(i);
 	}
 	
-	public void fillGalleryText(){
-		String text = "";
-		
-		for (int i = 0; i < galleryItems.length; i++){
-			if(galleryItems[i] == 0){
-				text += "?\n";
-			}
-			else{
-				text += StartMenu.items[i] + " x " + galleryItems[i] + "\n";
-			}
-		}
-		
-		TextView textView = (TextView)findViewById(R.id.itemsText);
-		textView.setText(text);
-	}
+//	public void fillGalleryText(){
+//		String text = "";
+//		
+//		for (int i = 0; i < galleryItems.length; i++){
+//			if(galleryItems[i] == 0){
+//				text += "?\n";
+//			}
+//			else{
+//				text += StartMenu.items[i] + " x " + galleryItems[i] + "\n";
+//			}
+//		}
+//		
+//		TextView textView = (TextView)findViewById(R.id.itemsText);
+//		textView.setText(text);
+//	}
 	
 	
 }

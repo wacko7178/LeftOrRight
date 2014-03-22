@@ -12,7 +12,7 @@
         android:layout_height="fill_parent"
         android:layout_weight=".5"
         android:clickable="false"
-        android:background="#FFFFFF"
+        android:background="@drawable/smallleftorright"
         android:text="Picture" >
     </Button>
 
