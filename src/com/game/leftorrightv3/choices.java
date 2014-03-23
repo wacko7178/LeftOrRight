@@ -1,10 +1,14 @@
 package com.game.leftorrightv3;
 	public class choices{
 		static final String space = "[ ]+";
-		String string1;
-		String string2;
-		String response1;
-		String response2;
+		String logEntry1;
+		String logEntry2;
+		String choice1;
+		String choice2;
+		String choiceResult1;
+		String choiceResult2;
+		String logResponse1;
+		String logResponse2;
 		int itemResp1;
 		int itemResp2;
 		int itemUsed1;
@@ -14,24 +18,18 @@ package com.game.leftorrightv3;
 		boolean alive1;
 		boolean alive2;
 		
-		public choices(String left, String right){
-			string1 = left;
-			string2 = right;			
+		public choices(String left, String logLeft, String right, String logRight){
+			choice1 = left;
+			choice2 = right;
+			logEntry1 = logLeft;
+			logEntry2 = logRight;
 		}
 		
-		public void setResponse1(String res1, int itemResp, int stillAlive, int itemUsed, int itemIndex){
-			response1 = res1;
-			itemUsed1 = itemUsed;
-			this.itemResp1 = itemResp;
-			if(stillAlive == 0){
-				alive1 = true;
-			} else{
-				alive1 = false;
-			}
-		}
+	
 		
-		public void setResponse1(String res1, String info){
-			response1 = res1;
+		public void setResponse1(String res1, String choiceResult, String info){
+			logResponse1 = res1;
+			choiceResult1 = choiceResult;
 			String[] ints = info.split(space);
 			itemUsed1 = Integer.parseInt(ints[2]);
 			this.itemResp1 = Integer.parseInt(ints[0]);
@@ -44,19 +42,10 @@ package com.game.leftorrightv3;
 			}
 		}
 		
-		public void setResponse2(String res2, int itemResp, int stillAlive, int itemUsed, int itemIndex){
-			response2 = res2;
-			itemUsed2 = itemUsed;
-			this.itemResp2 = itemResp;
-			if(stillAlive == 0){
-				alive2 = true;
-			} else{
-				alive2 = false;
-			}
-		}
 		
-		public void setResponse2(String res2, String info){
-			response2 = res2;
+		public void setResponse2(String res2, String choiceResult, String info){
+			logResponse2 = res2;
+			choiceResult2 = choiceResult;
 			String[] ints = info.split(space);
 			itemUsed2 = Integer.parseInt(ints[2]);
 			this.itemResp2 = Integer.parseInt(ints[0]);
@@ -70,6 +59,6 @@ package com.game.leftorrightv3;
 		}
 		
 		public String toString(){
-			return string1 + " " + string2 + "." ;
+			return choice1 + " " + choice2 + "." ;
 		}
 	}

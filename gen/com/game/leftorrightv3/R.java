@@ -1220,7 +1220,7 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f070019;
         public static final int action_menu_presenter=0x7f07001a;
         public static final int action_mode_close_button=0x7f070027;
-        public static final int action_settings=0x7f07004e;
+        public static final int action_settings=0x7f07004f;
         public static final int activity_chooser_view_content=0x7f070028;
         public static final int adView=0x7f070046;
         public static final int always=0x7f07000f;
@@ -1236,8 +1236,9 @@ containing a value of this type.
         public static final int end=0x7f070016;
         public static final int expand_activities_button=0x7f070029;
         public static final int expanded_menu=0x7f07002f;
+        public static final int galleryTitle=0x7f07004d;
         public static final int gamePic=0x7f070043;
-        public static final int goHome=0x7f07004d;
+        public static final int goHome=0x7f07004e;
         public static final int home=0x7f070017;
         public static final int homeAsUp=0x7f070009;
         public static final int hybrid=0x7f070004;
@@ -1343,10 +1344,11 @@ containing a value of this type.
         public static final int after_choice=0x7f03001d;
         public static final int fragment_gallery_list=0x7f03001e;
         public static final int fragment_splash_screen=0x7f03001f;
-        public static final int gallery_item=0x7f030020;
-        public static final int game_over=0x7f030021;
-        public static final int support_simple_spinner_dropdown_item=0x7f030022;
-        public static final int vinning=0x7f030023;
+        public static final int gallery_display=0x7f030020;
+        public static final int gallery_item=0x7f030021;
+        public static final int game_over=0x7f030022;
+        public static final int support_simple_spinner_dropdown_item=0x7f030023;
+        public static final int vinning=0x7f030024;
     }
     public static final class menu {
         public static final int extras=0x7f0d0000;

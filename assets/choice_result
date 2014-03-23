@@ -1,286 +1,418 @@
 *leftOrRight
-continue
+Still alive!
+Let the adventure begin!
 1 0 1 0
-continue
+Still alive!
+Let the adventure begin!
 1 0 1 0
 *cyclops
-GotKey
+Key
+The cyclops keels over and you are able to snag the key around his neck.
 0 0 1 0
-gameOver
+You died!
+The cyclops turns beet red with anger and eats you. 
 1 1 1 0
-GotKey
+Key
+Lassie runs at the cyclops who falls over in fright. You grab his key while he is distracted.
 0 0 0 0
-gameOver
+You died!
+The cyclops turns beet red with anger and eats you. 
 1 1 1 0
-GotKey 
+Key
+Your T-Rex lets loose a mighty torrent of flame that burns the cyclops to a crisp, even the shadows are burning! The only thing left is the key he had.
 0 0 0 0
-GotKey
+Key
+The cyclops keels over and you are able to snag the key around his neck.
 0 0 1 0
-GotKey
+Key
+Your water dino shoots a tidal wave that blasts the cyclops away. Hey, he dropped his key!
 0 0 0 0
-gameOver
+You died!
+The cyclops doesn't find your insult quite as funny as you do and boots you into the air. Now you’re blasting of agaaaaaaain...
 1 1 1 0
-GotKey
+Key
+The cyclops freaks out and runs away as he sees a manic running at him with a blunt object. You find a key in one of his footprints.
 0 0 0 0
-GotKey
+Key
+The cyclops starts rolling around and laughing so hard that the key slips from around his neck.
 0 0 1 0
-GotKey
+Key
+The cyclops greedily eats the nasty sushi roll and promptly takes a trip on the porcelain express ...he hurls everywhere. His key fell off in the commotion.
 0 0 0 0
-Gotkey
+Key
+The cyclops keels over and you are able to snag the key around his neck.
 0 0 1 0
-GotKey
+Key
+As you take your first bite, the cyclops runs over and begs you for the doughnut. Hey offers a trade for his precious key.
 0 0 0 0
-GotKey
+Key
+The cyclops starts rolling around and laughing so hard that the key slips from around his neck.
 0 0 1 0
-GotKey
+Key
+You pretend to offer him some buffalo sauce, but a conveniently placed rock trips you and it goes straight into his eye. A key falls to the ground as he stumbles about.
 0 0 0 0
-gameOver
+You died!
+The cyclops turns beet red with anger and eats you. 
 1 1 1 0
-GotKey
+Key
+The ferret relentlessly attacks the cyclops and causes him to drop the key.
 0 0 0 0
-GotKey
+Key
+The cyclops keels over and you are able to snag the key around his neck.
 0 0 1 0
-GotKey
+Key
+You put the Do Not Remove Tag near the cyclops. While heading down the road you spot a police car on the hunt for the tag. You tell them that there is a cyclops over yonder that is looking mighty suspicious. They give you a key for the information and go to arrest the cyclops. Job well done!
 0 0 0 0
-gameOver
-1 1 0 0
-GotKey
+You died!
+The cyclops turns beet red with anger and eats you. 
+1 1 1 0 
+Key
+The alien gun turns out to only shoot water. The cyclops squeals in joy and pulls his own water gun out. An epic water gun fight battle erupts. After a couple hours, the cyclops gives you a key for all the fun.
 0 0 0 0
-gameOver
+You died!
+The cyclops doesn't find your insult quite as funny as you do and boots you into the air. Now you’re blasting of agaaaaaaain...
 1 1 1 0
 *fireEatingBats
-continue
+Still alive!
+You don't disturb the bats and come out of the cave unscathed. 
 1 0 1 0
-gameOver
+You died!
+While trying to open the chest, you wake the bats from their slumber. Eating fire also gave them the ability to breathe fire. Although on fire, you aren’t doing so hot...
 1 1 1 0
-GotFireDino
+Fire dino
+The Baby T-Rex gobbles up as many bats as he can. An interesting transformation starts to occur as your T-Rex adopts the ability to eat fire and breathe it too! Unfortunately he got carried away and destroyed the chest.
 0 0 0 1
-continue
+Still alive!
+You don't disturb the bats and come out of the cave unscathed.
 1 0 1 0
-GotBabyBottle
+Baby bottle
+You leave the liquid ice out and the bats flock to this unknown substance and start drinking with vigor. They turn into regular bats and leave the chest unguarded. You take a peek inside the chest.
 0 0 0 0
-continue
+Still alive!
+You don't disturb the bats and come out of the cave unscathed. 
 1 0 1 0
-GotBabyBottle
+Baby bottle
+Turns out that the bats couldn't handle anymore heat and explode! You are able to open the chest no problem.
 0 0 0 0
-gameOver
+You died!
+While trying to open the chest, you wake the bats from their slumber. Eating fire also gave them the ability to breathe fire. Although on fire, you aren’t doing so hot...
 1 1 1 0
 *dog
-continue
+Still alive!
+You pat the dog on the head as you walk by. The dog cries out to you sadly but doesn't move as it watches you leave.
 1 0 1 0
-GotDog
+Dog
+You teach the dog how to troll a cyclops. The dog wants to be your best friend now!
 0 0 1 0
-GotDog
+Dog
+The dog chases after the ball and quickly brings it back. Fetch is a lot of fun but the dog slobbered all over the ball so you don’t want to touch it anymore. You start walking down the path and the dog follows.
 0 0 0 0
-continue
+Still alive!
+The dog doesn't like being teased and wanders off to find somebody with a heart.
 1 0 1 0
-GotDog
+Dog
+The dog is eternally grateful that you were able to satiate his thirst and decides to follow you.
 0 0 0 0
-continue
+Still alive!
+The dog doesn't like being teased and wanders off to find somebody with a heart.
 1 0 1 0
-GotDog
+Dog
+The dog greedily eats the doughnut and decides to follow you in case you have more tasty treats.
 0 0 0 0
-GotDog
-0 0 1 0
+Still alive!
+You pat the dog on the head as you walk by. The dog cries out to you sadly but doesn't move as it watches you leave.
+1 0 1 0
 *werewolves
-gameOver
+You died!
+Turns out the werewolves were a lot tougher than they looked...
 1 1 1 0
-continue
+Still alive!
+Cardio pays off and you were able to escape from the werewolves!
 1 0 1 0
 secretArea
-1 0 0 0
-continue
+The key doesn’t fit..yet. Well at least the werewolves won’t go hungry.
+1 1 1 0
+Still alive!
+Cardio pays off and you were able to escape from the werewolves!
 1 0 1 0
-continue
+Still alive!
+Blunt silver object is super effective against werewolves!
 1 0 0 0
-continue
+Still alive!
+Cardio pays off and you were able to escape from the werewolves!
 1 0 1 0
-continue
+Still alive!
+Turns out the alien gun only shoots water, but dogs hate getting spritzed so they run away whimpering.
 1 0 0 0
-continue
+Still alive!
+Cardio pays off and you were able to escape from the werewolves!
 1 0 1 0
 *babyTRex
-gameOver
+You died!
+Mama T-Rex does not like you touching her little one...she’ll be picking you out of her teeth for weeks.
 1 1 1 0
-GotBabyTRex
+Baby dino
+Luckily that stoller had some slick wheels and you were able to escape quicker than Mama T-Rex could chase you.
 0 0 1 0
-gameOver
+You died!
+Mama T-Rex does not appreciate your helping raise her child and she eats you.
 1 1 0 0
-GotBabyTRex
+Baby dino
+Luckily that stoller had some slick wheels and you were able to escape quicker than Mama T-Rex could chase you.
 0 0 1 0
-GotBabyTRex
+Baby dino
+The ferret goes into a blood fueled frenzy and disappears off to where he heard the roar. You decide it’s time to take your leave and continue on down your path with you new baby T-Rex, tradsies!
 0 0 0 0
-gameOver
+You died!
+Mama T-Rex does not like you touching her little one...she’ll be picking you out of her teeth for weeks.
 1 1 0 0
 *liquidIce
-GotLiquidIce
+Liquid ice
+You snag the liquid ice and continue on your way.
 0 0 1 0
-continue
+Still alive!
+Now that your thirst is satiated you can think clearly and realize what a terrible decision you just made. Seriously, do you have any idea how rare that is? 
 1 0 1 0
-GotLiquidIce
+Liquid ice
+You snag the liquid ice and continue on your way.
 0 0 1 0
 GotWaterDino
+The liquid ice has mystical properties and converts your little baby T-Rex into a full fledged, water spewing monster with enormous potential. He also has ability to give you drinking water. You: 1, World: 0.
 0 0 0 1
 *battingCages
-continue
+Still single!
+The worker nods in approval as you walk by. You didn’t get to play any games but at least you got a nod. The worker MUST be interested.
 1 0 1 0
-gameOver
+You died!
+The worker does not appreciate you groveling and takes out a shiny metal bat and promptly beats you with it. GG.
 1 1 1 0
-continue
+Still single!
+You try and hold a conversation but the worker is clearly disinterested. Continue on your way.
 1 0 1 0
-GotSilverBat
+Silver bat
+As the first ball comes out of the machine, you wind up and take a tremendous swing, but the bat flings out of your hand and clocks the worker. Oops! That bat might be useful though...
 0 0 0 0
 *cowboy
-continue
+Still alive!
+He doesn’t want to talk and just grunts. Typical.
 1 0 1 0
 GotKey
+You were able to out-spit this rootin’ tootin’ cowboy. He gave you a key for your efforts!
 0 0 1 0
-continue
+Still alive!
+He doesn’t want to talk and just grunts. Typical.
 1 0 1 0
-GotKey
+Key
+After examining the liquid ice marvel, he quickly grabs his revolver and promptly shoots the container. You can only stare in shock as he destroys your most prized possession. He gives you a key in apology.
 0 0 0 0
-continue
+Still alive!
+He doesn’t want to talk and just grunts. Typical.
 1 0 1 0
-GotKey
+Key
+He laughs at you but accepts. After drinking a gallon and a half of buffalo sauce the cowboy concedes and gives you a key for trumping him, he also tells you to eat some ice cream...you know…to ease the inevitable burning. What a guy!
 0 0 0 0
-continue
+Still alive!
+He doesn’t want to talk and just grunts. Typical.
 1 0 1 0
-GotKey
-0 0 0 0
-continue
+You died!
+Turns out you alien ray gun only shoots water while the cowboy shoots metal at 400m/s….so yea, you died.
+0 1 1 0
+Still alive!
+He doesn’t want to talk and just grunts. Typical.
 1 0 1 0
-GotKey
+Key
+The cowboy appreciates his dog so much that he gives you a key.
 0 0 0 0
 *chests
-continue
+Still alive!
+Good call there, that chest was giving me the heeby jeebies!
 1 0 1 0
-GotRandom
+Random
+Looks like breaking the chest payed and you were able to snag some sweet loot.
 0 0 1 0
-continue
+Still alive!
+Good call there, that chest was giving me the heeby jeebies!
 1 0 1 0
-GotRandom
+Random
+The key fits the lock and you were able to get whatever was locked in the chest!
 0 0 0 0
-continue
+Still alive!
+Good call there, that chest was giving me the heeby jeebies! 
 1 0 1 0
-GotRandom
+Random
+The fire T-Rex shows the evil chest who’s boss and breaks it open revealing some sweet loots...that he promptly steps on it. You were able to salvage one item, but the T-Rex couldn’t continue with his stubbed toe :(
 0 0 0 0
-continue
+Still alive!
+Good call there, that chest was giving me the heeby jeebies!
 1 0 1 0
-GotRandom
+Random
+Destroying the chest made you feel less creeped out and you got a sweet item!
 0 0 0 0
 *slotMachine
-GotKeyOrContinue
+Key
+Let’s see what you won!
 0 0 1 0
-continue
+Still alive!
+The slot machine was probably a gimmick anyway. I mean seriously, who puts a slot machine in the middle of nowhere?
 1 0 1 0
-GotKey
+Key
+Let’s see what you won!
 0 0 0 0
-continue
+Still alive!
+Does anybody even win the lottery? ...Well one person does, but you are not that one person! 
 1 0 1 0
-GotKey
+Key
+The slot machine got what was coming to it, and it looks like fell out!
 0 0 0 0
-continue
+Still alive!
+Does anybody even win the lottery? ...Well one person does, but you are not that one person!
 1 0 1 0
 *sumoWrestler
-gameOver
+You died!
+...Bad move. Sumo wrestler doesn’t understand the meaning of wrassle and sits on you. You ain’t goin’ nowhere!
 1 1 1 0
-continue
+Still alive!
+Success! That sumo wrestler couldn’t handle your push and fell over. He’s fallen and he can’t get up!
 1 0 1 0
-continue
-1 0 0 0
-continue
-1 0 1 0
-continue
-1 0 0 0
-gameOver
+You died!
+The sumo doesn’t appreciate racial stereotyping. He decides to eat you instead!
 1 1 1 0
-CopsTakeOutSumo
-1 0 0 0
-Continue
+Still alive!
+Success! That sumo wrestler couldn’t handle your push and fell over. He’s fallen and he can’t get up!
 1 0 1 0
-continue
+Still alive!
+The sumo wrestler scarfs down the doughnut and promptly falls asleep. I think he may have fallen on somebody, does anybody have a flute to wake this big guy up?
 1 0 0 0
-gameOver
+You died!
+...Bad move. Sumo wrestler doesn’t understand the meaning of wrassle and sits on you. You ain’t goin’ nowhere!
+1 1 1 0
+Justice
+The cops see the Do Not Remove Tag at the sumo wrestler’s next match and quickly arrest him. 
+1 0 0 0
+Still alive!
+Success! That sumo wrestler couldn’t handle your push and fell over. He’s fallen and he can’t get up!
+1 0 1 0
+Still alive!
+The sumo wrestler grabs the baby bottle and then you. He starts nursing you. Well, things could be worse, right?
+1 0 0 0
+You died!
+...Bad move. Sumo wrestler doesn’t understand the meaning of wrassle and sits on you. You ain’t goin’ nowhere!
 1 1 1 0
 *dinnerTable
-GotItem
+Food
+The pressure was great but you were able to decide which item to get.
 0 0 1 3
-continue
+Still alive
+You chat with the teacup and eventually land of the meaning of life and how it is affected by swiss cheese. After a while you get weirded out that you are talking to a teacup and awkwardly end your conversation with, “Have a nice life.”
 1 0 1 0
 *lazyRiver
-Continue
+Still alive!
+You fell asleep for 5 hours and have a terrible sunburn, but you are still alive and the current picked you up and took you closer to your destination!
 1 0 1 0
-gameOver
+You died!
+So it’s not a toll bridge, but it is a TROLL bridge. He asks for payment to cross the bridge but he isn’t interested in anything you have so he eats you instead.
 1 1 1 0
 *ferret
-gameOver
+You died!
+Nope! Nope nope nope!!! That ferret is not cute and not adorable, but a maniac! A blood loving sociopath! You dun did got wrecked!
 1 1 1 0
-GotFerret
+Ferret
+The ferret shrinks away but starts following you around in a more docile fashion. I wonder if he will turn into the blood crazed sociopath he was before.
 0 0 1 0
-gameOver
+You died!
+Nope! Nope nope nope!!! That ferret is not cute and not adorable, but a maniac! A blood loving sociopath! You dun did got wrecked! 
 1 1 1 0
-GotFerret
+Ferret
+The ferret gulps down every last drop and becomes more docile as it does. You may have just made a powerful ally, just make sure to keep it constantly fed so it doesn’t attack you and wreck everything.
 0 0 0 0
 *mattresses
-continue
+Still alive!
+You fall asleep for a few hours and then wake up feeling just as tired. Bummer. 
 1 0 1 0
-GotDNRTag
+Tag
+Did you really just do that? I heard you could get arrested for taking that off. Be careful!
 0 0 1 0
-continue
+Still alive!
+You fall asleep for a few hours and then wake up feeling just as tired. Bummer. 
 1 0 1 0
-FerretWreckedThePlace
+Wrecked
+You let the ferret go inside the mattress store and leave. You look inside the window and watch as mattress innards go everywhere...that could have been your innards. 
 1 0 0 0
 *hippopatapi
-continue
+Still alive!
+A humongous sinkhole opens up, completely cutting you off from your destination! Luckily the button also gave the hippos wings, now they’re hovering hippopatapi! One of them kinda flies you across the gap.
 1 0 1 0
-gameOver
+You died!
+The hippo you chose actually loves it when people ride him. He starts running around having a blast! Then he rolled over… bad luck
 1 1 1 0
 *alienAbduction
-gameOver
+You died!
+Bad move breh. You couldn’t escape and the aliens didn’t appreciate your eagerness to leave their party. You just became a slave for life.
 1 1 1 0
-continue
+Still alive!
+You took the probing like a champ and the aliens recognized that. They let you go and popped a lollypop in your mouth to boot. You finish it and say, “See ya nerds!”
 1 0 1 0
-GotAlienRayGun
+Ray gun
+The ferret went on a rampage. During all the commotion you were able to steal a slick alien ray gun and escape the ship with a shiny new toy.
 0 0 0 0
-continue
+Still alive!
+You took the probing like a champ and the aliens recognized that. They let you go and popped a lollypop in your mouth to boot. You finish it and say, “See ya nerds!”
 1 0 1 0
-GotAlienRayGun
+Ray gun
+You start beating your way out of alien hands. Your bat bends and then snaps right before exit. Luckily you were able to snag a sweet alien ray gun.
 0 0 0 0
-continue
-1 0 1 0
+Still alive!
+You took the probing like a champ and the aliens recognized that. They let you go and popped a lollypop in your mouth to boot. You finish it and say, “See ya nerds!”
+1 0 1 
 *bombRoom
-ContinueDependingOnCordCut
+Still alive!
+Looks like you cut the right cord! Congratulations…(Looks like I need more cords next time)
 1 0 1 0
-DeadDOCC
+You died
+Kaboom! While meditating on the meaning of life was great for your soul, you are now nothing but dust. Scrub.
 1 1 1 0
 *cyclopsPicinic
-continue
+Still alive!
+You did your good deed for the day by not trolling the cyclops. Karma incoming!
 1 0 1 0
-gameOver
+You died!
+The cyclops invites you over and in an effort to impress his girlfriend, looks like you are the new main course! Bummer!
 1 1 1 0
-continue
+Still alive!
+Good guy cyclops doesn’t care about the shocking mole on his girlfriend’s face, at least not that much...
 1 0 0 0
-continue
+Still alive!
+You did your good deed for the day by not trolling the cyclops. Karma incoming!
 1 0 1 0
-continue
+Still alive!
+It turns out that the cyclops wasn’t impressed by the ignited lettuce wrap he was holding, but he doesn’t want to show his mean side in front of his lady friend. You got lucky this time!
 1 0 0 0
-continue
+Still alive!
+You did your good deed for the day by not trolling the cyclops. Karma incoming!
 1 0 1 0
-continue
+Still alive!
+The cops arrested the cyclops for removing the Do Not Remove tag. At least something good happened today. 
 1 0 0 0
-continue
+Still alive!
+You did your good deed for the day by not trolling the cyclops. Karma incoming!
 1 0 1 0
-continue
+Still alive!
+You run away as quick as you can before the ferret turns on you. You can hear cyclops howl in the distance.
 1 0 0 0
-continue
+Still alive!
+You did your good deed for the day by not trolling the cyclops. Karma incoming!
 1 0 1 0
 *donutShop
-GotDonut
+Doughnut
+After slaving away for hours, you were able to pocket one of the tasty delectables. 
 0 0 1 0
-StoleDonut
+Doughnut
+You waist away the whole day attempting to come up with a scheme to steal a doughnut. You plan on executing your master plan at closing time! Not a minute before closing time, the workers throw all the leftover doughnuts away. Oh well...beggars can’t be choosers.
 0 0 1 0
 *cop
-goToJail
+Still alive!
+The cops struggle to find any evidence but are suspicious of you. There is suddenly a call about a rabid, blood crazed ferret on the loose and they run off, leaving your cell open. Free to go!
 1 0 1 0
-gameOver
+You died!
+You are faster than the cops but a taser is faster than you. I hope you don’t rot in that cell...
 1 1 1 0

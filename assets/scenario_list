@@ -1,176 +1,330 @@
 *leftOrRight
+Fork
 You've come to a fork in the road! Which way will you go?
 Left
+Left
+Right
 Right
 *cyclops
 Cyclops
+You come across a cyclops that is giving you the lazy eye. What will you do?
 Poke
+Poke the cyclops in the eye.
 Kick
-SicDog
+Kick the cyclops in the shin.
+Sic dog
+Your canine companion is growling at the cyclops. Let her loose.
 Kick
+Kick the cyclops in the shin. 
 Burn
+Your fire breathing T-Rex has fire in his eyes when looking at the cyclops. Sic the dino on the cyclops.
 Poke
-BubbleBeam
+Poke the cyclops in the eye.
+Drown
+Your water dino looks like he is ready to drown the cyclops in a torrent of water. Let him go.
 Insult
-BeatCyclops
+Diss the cyclops, hopefully he’s found some ointment for this burn!
+Beat cyclops
+You've been dying to try your new silver bat out. Go to town on the cyclops.
 Joke
-FoodPoison
+You recently heard a one eyed monster joke that you think the cyclops would enjoy. Share it.
+Food poison
+That sushi roll that you obtained earlier isn't looking too good anymore. Give it to the cyclops.
 Poke
-EatInFront
+Poke the cyclops in the eye.
+Don’t share
+The cyclops is looking kind of hungry. Eat your doughnut in front of him.
 Joke
-PutInEye
+You recently heard a one eyed monster joke that you think the cyclops would enjoy. Share it.
+Sauce in eye
+You are sick of the cyclops sass. Shoot him with Buffalo sauce.
 Kick
-UnleashTheBeast
+Kick the cyclops in the shin.
+Ferret
+The once blood crazed ferret is starting to get a little stir crazy. Let him loose, just this once.
 Poke
-PiPocket
+Poke the cyclops in the eye.
+Leave tag
+The Do Not Remove tag is starting to pick up some heat with po-po. Leave it with the cyclops.
 Kick
+Kick the cyclops in the shin. 
 Shoot
+You haven't seen the alien ray gun in action. Try it out.
 Insult
+Diss the cyclops, hopefully he’s found some ointment for this burn!
 *fireEatingBats
-BATS!
+Bats
+You come across a cave of sleeping bats that eat fire!!! It looks like they are protecting some sort of treasure chest.
 Sneak
+The bats look dangerous. Sneak around them.
 Wake
-DinoEat
+That chest looks mighty tempting. Disturb the bats to get to the chest.
+Dino dinner
+Your baby T-Rex is looking mighty hungry and he is eyeing those bats. Let him loose.
 Sneak
-GiveIce
+The bats look dangerous. Sneak around them.
+Liquid ice
+The bats look mighty hot. Give them some liquid ice.
 Sneak
-FeedBS
-Wake 
+The bats look dangerous. Sneak around them.
+Buffalo sauce
+The bats look like they could use a little more heat. Give them buffalo sauce.
+Wake
+That chest looks mighty tempting. Disturb the bats to get to the chest.
 *dog
-It's Lassie!
+Dog
+A beautiful dog is laying by the side of the road. She looks up expectantly as you approach
 Pet
+You are too busy to play with the dog. Give it a pat on the head and continue.
 Teach
+You've got some time to kill. Teach the dog a new trick.
 Fetch
+The dog is eyeing your tennis ball and wants to play. Throw it for her.
 Tease
-GiveWater
+The dog’s legs are kind of stumpy. Tease it a bit.
+Liquid ice
+The dog looks quite parched. Give her some liquid ice..
 Tease
-GiveDonut
-Pet 
+The dog’s legs are kind of stumpy. Tease it a bit.
+Doughnut
+The dog looks quite hungry and he wanders up to you and starts sniffing your doughnut pocket. Give her the doughnut.
+Pet
+You are too busy to play with the dog. Give it a pat on the head and continue.
 *werewolves
-Watch for wolves
+Werewolves
+You come upon a forest lit by a full moon. First you notice a mysterious door, and then you hear howling in the distance...is it so distant? Werewolves come bursting through the trees. What will you do?
 Fight
+These werewolves don’t look so tough. Fight them!
 Run
+You don’t wanna mess with these werewolves. Let’s hope the first rule of zombies applies to werewolves. Run away!
 UseKey
+There is a key-shaped hole in the door that just so happens to look like your key. Make a break for it and use the key.
 Run
-BeatWithBat
+You don’t wanna mess with these werewolves. Let’s hope the first rule of zombies applies to werewolves. Run away!
+Silver bat
+You feel like you can hit a home run with that new silver bat you earned. Beat up the werewolves.
 Run
-ShootEm
+You don’t wanna mess with these werewolves. Let’s hope the first rule of zombies applies to werewolves. Run away!
+Ray gun
+That alien ray gun looks like it can do work to these werewolves. Shoot em!
 Run
+You don’t wanna mess with these werewolves. Let’s hope the first rule of zombies applies to werewolves. Run away! 
 *babyTRex
-AAAAAWWWWw look at duh babyyyyy TREX!(RAWR)
+T-Rex
+You stumble across a stroller on your path and you decide to look inside. AAAAAWWWWw look at duh babyyyyy T-Rex!(RAWR)
 Pet
+That baby T-Rex is just the most adorable thing you have ever seen. Pat it on the head.
 Steal
+You’ve always wanted a T-Rex and you just added a room in your place that would be perfect. Steal it.
 Feed
+The T-Rex looks quite hungry. Feed it with the baby bottle.
 Steal
-LooseFerret
-Feed
+You’ve always wanted a T-Rex and you just added a room in your place that would be perfect. Steal it.
+Ferret
+You hear another T-Rex roar in the distance and your ferret looks like he wants a challenge. Let the ferret loose.
+Pet
+That baby T-Rex is just the most adorable thing you have ever seen. Pat it on the head.
 *liquidIce
-Pedastal of liquid ice, so nice!
+Liquid Ice
+As you walk your path, you find a  pedestal with none other than the most rare artifact in the world. LIQUID ICE!
 Steal
+You aren’t quite thirsty yet, but you also can’t leave this most precious commodity here. Steal it.
 Drink
+You are dying of thirst and the only thing you can think of is to have this rare piece of nature inside your person. Drink it.
 Steal
+You aren’t quite thirsty yet, but you also can’t leave this most precious commodity here. Steal it.
 GiveDino
+Your lil’ baby dino is crying like nobody’s business. Maybe it’s thirsty, give it the liquid ice.
 *battingCages
-Ohhh, a CCC working some batting cages
-StrutYoStufYo
-BegForGame
-TalkToCCC
-PayKey&Bat
+Batting Cages
+You come across what appears to be batting cages in the middle of nowhere. On the plus side, there is a cute counter chick working the register.
+Strut
+You have no keys and can’t afford to play any games. You need to leave with some dignity and to show interest in the worker as you walk by. Strut yo stuff.
+Beg
+You don’t have any keys to play the game but maybe you can work your magic. Beg for a  free game.
+Talk
+You have a key but you’d rather just talk to the cute worker. Chat it up.
+Key
+You’ve always been a natural at the batting cages. Pay a key and play.
 *cowboy
-Howdy pardner
+Cowboy
+A gruff looking cowboy is walking the same path you, but in a way cooler fashion.
 Talk
+You’d like to talk to him and see what he is all about. Try and get a story out of him.
 Challenge
+You’d like to show this cowboy what’s what. Challenge him to a spitting contest.
 Talk
+You’d like to talk to him and see what he is all about. Try and get a story out of him.
 GiveWater
+The cowboy is looking a tad thirsty. Offer him liquid ice.
 Talk
-EatingContestBS
+You’d like to talk to him and see what he is all about. Try and get a story out of him.
+Drink sauce
+You’ve heard that cowboys take part in buffalo drinking contests. Challenge him!
 Talk
+You’d like to talk to him and see what he is all about. Try and get a story out of him.
 Duel
+You’ve been looking for someone to duel with your fancy new alien ray gun. Duel the cowboy.
 Talk
-GiveDog
+You’d like to talk to him and see what he is all about. Try and get a story out of him.
+Dog
+The cowboy looks mighty lonely but you've heard this cowboy doesn’t like hang around on his own kind. Give him your dog.
 *chests
-Ohhhh a shiny treasure chest
-WalkAway
-BreakChests
-WalkAway
-UseKey
-WalkAway
-LetFireDinoLoose
-WalkAway
-BreakWithBat
+Treasure Chest
+You decide to go exploring and find a deep dark cave. Inside said cave is a mysterious looking chest with all forms of evil energy coming off of it.  
+Walk
+This chest looks too evil for your taste. Walk away.
+Break
+Bump the evilness. Break into that chest like nobody's bid’niss.
+Walk
+This chest looks too evil for your taste. Walk away.
+Key
+You have a key that looks like it could fit the lock. Use your key.
+Walk
+This chest looks too evil for your taste. Walk away.
+Fire dino
+Your fire T-Rex is growling at the chest. Let him loose!
+Walk
+This chest looks too evil for your taste. Walk away.
+Silver bat
+The chest is giving you the creeps, and what better way to deal with the creeps than to destroy whatever was causing it? Break the chest with your bat.
 *slotMachine
-A slot machine? Are we in Vegas?
-FreeSpin
-WalkAway
-PayKey
-WalkAway
-SmashWithBat
-WalkAway
+Slot machine
+A slot machine? Are we in Vegas? It looks like somebody payed for a spin but didn’t take it.
+Spin
+Spin the wheel for a chance at 100 keys!
+Walk
+You could get a chance at some free keys...or you could walk away. Free is never free...walk away.
+Key
+The slot machine takes keys and you get keys in return and the more keys you pay, the more you get. It’s a win-win right!? Pay extra key and spin.
+Walk
+You could get a chance at some keys...or you could walk away. The risk is too much for you to handle. Leave the free spin for someone else and walk away.
+Silver bat
+This slot machine is the source of all evil in the world. Take it out with your trusty bat.
+Walk
+You could get a chance at some free keys or you could walk away. Free is never free...walk away.
 *sumoWrestler
-OOoooOOOhhh, sumo sumo!
-Wrestle
+Sumo Wrestler
+OOoooOOOhhh, sumo sumo! A sumo wrestler is blocking your path!
+Wrassle
+You were a pretty good wrassler back in your wrassling days on the wrasslin’ team at your local wrassling gym. Show this sumo wrestler how to wrassle.
 Push
-GiveSushi
+This sumo looks a little top heavy. Push him over.
+Sushi
+The sumo wrestler looks hungry. Give him some sushi.
 Push
-GiveDonut
-Wrestle
-HideDNRTag
+This sumo looks a little top heavy. Push him over.
+Doughnut
+Sugary sweets are a must with sumo wrestlers. Give him a doughnut.
+Wrassle
+You were a pretty good wrassler back in your wrassling days on the wrasslin’ team at your local wrassling gym. Show this sumo wrestler how to wrassle.
+Hide tag
+The Do Not Remove tag is picking up a lot of heat from the cops. Hide it with the sumo wrestler.
 Push
-NurseWithBB
-Wrestle
+This sumo looks a little top heavy. Push him over.
+Baby bottle
+Maybe this sumo wrestler is just a big baby. Try to nurse him with the baby bottle.
+Wrassle
+You were a pretty good wrassler back in your wrassling days on the wrasslin’ team at your local wrassling gym. Show this sumo wrestler how to wrassle.
 *dinnerTable
-MMmmm dinner
-PickOneItem
-WalkAway
+Dinner table
+You come across a dinner table filled with loads of food and a talking teacup. Three items catch your eye: fruit cake, buffalo sauce, and a sushi roll.
+Pick
+You are too indecisive to make a choice. Pick an item at random.
+Walk
+There is too much pressure. You can’t decide what to pick! Is it even worth it? The teacup senses your dismay and calms you down with the aroma of hot tea. 
 *lazyRiver
-A lazy river, sounds relaxing
+Lazy river
+You come across a lazy river that is making relaxing sounds like a babbling brook. It would be nice to hang out for a while but you also need to cross the bridge and keep moving. You don’t have any change on you so hopefully it’s not a toll bridge.
 RideRiver
+You see an inner tube on the side of the river. Let’s take a relaxing ride down the river.
 CrossBridge
+There are far too many things to get done to relax. Keep moving and cross  the bridge.
 *ferret
-It's a ferret! I'm literally freaking out
+Ferret
+It's a ferret! I'm literally freaking out! It is foaming at the mouth but I don’t even care!
 Pet
-BopHead
+The ferret is drop dead adorable. Pet the ferret.
+Bop it
+The ferret starts hissing as you get closer to it. Bop it on the head and show it who’s boss.
 Pet
+The ferret is drop dead adorable. Pet the ferret.
 Feed
+The ferret hisses at you as you approach, but it also looks very hungry. Try to feed it with the baby bottle.
 *mattresses
-A mattress store.... how comfy
+Mattress store
+A mattress store.... how comfy!
 Sleep
-StealDNR
+Your journey has been really long...unless this is your first stop... Get some sleep.
+Steal tag
+You see the Do Not Remove Tag on a mattress. Nobody tells you what not to remove! Remove the Do Not Remove Tag.
 Sleep
-LooseFerret
+Your journey has been really long...unless this is your first stop... Get some sleep.
+Ferret
+Your ferret has been slowly going back to its evil, wicked ways. It might be time to turn it loose. Unleash the beast!
 *hippopatapi
-A heaping helping of hippopatapi! Also a button..
-PushButton
-RideHippo
+Hippopatapi
+A heaping helping of hippopatapi are having some hay! You also see a large button with no markings at all. What could possibly go wrong here?
+Push
+That button is huge, it’s not often that you get opportunities like this. Push it!
+Ride
+These hippos look totally rideable. Ride a hippo.
 *alienAbduction
-You've been abducted by aliens, hey that this is shiny!
+Alien abduction
+You've been abducted by aliens, hey that thing is shiny!
 Escape
-TakeProbing
-LooseFerret
-TakeProbing
-EscapeUsingBat
-TakeProbing
+You can’t stay locked up in an alien ship. You see an opening and make a break for it!
+Probing
+The situation looks grim and there are all sorts of metal probing objects. Take the probing and hope for the best.
+Ferret
+Your ferret is getting hungry. Let him loose to try this new alien delicacy. 
+Probing
+The situation looks grim and there are all sorts of metal probing objects. Take the probing and hope for the best.
+Silver bat
+You have your silver bat nearby. Make a grab for it and start knocking heads.
+Probing
+The situation looks grim and there are all sorts of metal probing objects. Take the probing and hope for the best.
 *bombRoom
-You find yourself in a room with a big ol' bomb
-PickCord
-Meditate on the meaning of life
+Bomb room 
+You find yourself in a room with a big ol' bomb and a timer that has an indeterminate amount of time. You think you may have enough time to run...but you don’t! 
+Pick cord
+Randomly pick one of the cords coming off the bomb and hope for the best.
+Wait
+Meditate on the meaning of life.
 *cyclopsPicinic
-Looks like the one eyed monster is having some fun
-Continue 
+Picnic
+You spot a cyclops, looks like the one eyed monster is having some fun at a picnic with his girlfriend.
+Continue
+You’ve decided not to troll the cyclops while he is with his girlfriend. Move on.
 Join
-LooseWaterDino
+Looks like the cyclops picnic could use one more, you! Join the party.
+Water dino
+The cyclops’ girlfriend looks like she has a ton of makeup on. You’d like to do the cyclops a favor and show the true face of his girlfriend. Use the water dino to wash the makeup off.
 Continue
-LooseFireDino
+You’ve decided not to troll the cyclops while he is with his girlfriend. Move on.
+Fire dino
+This picnic looks quite romantic and what would make it more romantic than fire?!? Loose the fire T-Rex!
 Continue
-HideDNRTag
+You’ve decided not to troll the cyclops while he is with his girlfriend. Move on.
+Hide tag
+The Do Not Remove Tag is starting to burn a hole in your pocket. Sneak to the picnic and stash it in their basket.
 Continue
-LooseFerret
+You’ve decided not to troll the cyclops while he is with his girlfriend. Move on.
+Ferret
+Your ferret is reverting to his evil ways and you know just the place to release him. Release the ferret on the picnic!
 Continue
+You’ve decided not to troll the cyclops while he is with his girlfriend. Move on.
 *donutShop
+Doughnut shop
 Mmmm a doughnut shop!
 Work
+You could really use a doughnut but have no money to buy a doughnut. Work for a doughnut.
 Steal
+You could work for a doughnut or you could steal one while no one is looking. Steal doughnut.
 *cop
-Cops! They dun did found you out!
-AssumePosition
+Cops
+A couple of bike cops pull you over and accuse you of doing something nasty! 
+Halt
+You don’t have the cleanest record, but maybe they won’t have your file on hand. Assume the position.
 Run
+You can outrun these coppers. No big deal. Just gotta fake em out...RUN!!!!!

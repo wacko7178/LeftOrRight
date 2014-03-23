@@ -3,17 +3,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-
-    <ScrollView
-        android:id="@+id/scrollText"
+    
+    <TextView
+        android:id="@+id/galleryTitle"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:text="My text"/>
+    
+    <ListView 
+        android:id="@android:id/list"
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
-		
-        <TextView
-            android:id="@+id/itemsText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
         
-    </ScrollView>
+        
+    </ListView>
 
 </LinearLayout>

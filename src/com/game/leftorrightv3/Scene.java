@@ -11,18 +11,20 @@ import android.content.res.AssetManager;
 
 public class Scene {
 	String name;
+	String logName;
 	String sceneDescription;
 	ArrayList<choices> choice;
 	ArrayList<tuple> itemsNeeded;
 	ArrayList<Integer> itemsRecieved;
 	
-	public Scene(String sceneName, String sceneDescription, ArrayList<choices> choices, Context context) throws IOException{
+	public Scene(String sceneName, String logName, String sceneDescription, ArrayList<choices> choices, Context context) throws IOException{
 		
 		choice = new ArrayList<choices>();
 		itemsNeeded = new ArrayList<tuple>();
 		itemsRecieved = new  ArrayList<Integer>();
 		
 		name = sceneName;
+		this.logName = logName;
 		this.sceneDescription = sceneDescription;
 		this.choice = choices;
 		

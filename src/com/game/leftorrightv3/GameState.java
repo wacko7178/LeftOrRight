@@ -49,23 +49,27 @@ public class GameState {
 			
 			String currName = sf.nextLine();
 			String currDescr = "";
+			String currLog = "";
+			String nextLog = "";
 			while(sf.hasNext()){
+				currLog = sf.nextLine();
 				currDescr = sf.nextLine();
-				String next = sf.nextLine();
+				nextLog = sf.nextLine();
 				ArrayList<choices> choiceList = new ArrayList<choices>();
-				while(!next.startsWith("*") && sf.hasNext()){
-					String currOption1 = next;
+				while(!nextLog.startsWith("*") && sf.hasNext()){
+					String currOption1 = sf.nextLine();
+					String nextLog2 = sf.nextLine();
 					String currOption2 = sf.nextLine();
-					choices currChoice = new choices(currOption1, currOption2);
+					choices currChoice = new choices(currOption1, nextLog, currOption2, nextLog2);
 					choiceList.add(currChoice);
 					if(sf.hasNext())
-						next = sf.nextLine();
+						nextLog = sf.nextLine();
 					//		System.out.println(currName + " " + currOption1 + " " + currOption2 + " " + next);
 
 				}
-				Scene currScene = new Scene(currName, currDescr, choiceList, context);
+				Scene currScene = new Scene(currName, currLog, currDescr, choiceList, context);
 				scenarios.add(currScene);
-				currName= next;
+				currName = nextLog;
 			}
 			
 			
@@ -80,8 +84,8 @@ public class GameState {
 						choices choice = scenarios.get(i).choice.get(j);
 						//choice.setResponse1(cRs.nextLine(), cRs.nextInt(), cRs.nextInt(), cRs.nextInt());
 						//choice.setResponse2(cRs.nextLine(), cRs.nextInt(), cRs.nextInt(), cRs.nextInt());
-						choice.setResponse1(cRs.nextLine(), cRs.nextLine());
-						choice.setResponse2(cRs.nextLine(), cRs.nextLine());
+						choice.setResponse1(cRs.nextLine(), cRs.nextLine(), cRs.nextLine());
+						choice.setResponse2(cRs.nextLine(), cRs.nextLine(), cRs.nextLine());
 					} catch(Exception e){
 						Log.d("index i: ", i + " ");
 						Log.d("index j: ", j + " ");
@@ -129,8 +133,8 @@ public class GameState {
 			Scene currScene = scenarios.get(i);
 			for(int j = 0; j < currScene.choice.size(); j++){
 				choices currChoice = currScene.choice.get(j);
-				String newLog1 = currScene.name + "." + currChoice.string1 + "." + currChoice.alive1;
-				String newLog2 = currScene.name + "." + currChoice.string2 + "." + currChoice.alive2;
+				String newLog1 = currScene.logName + "." + currChoice.logEntry1 + "." + currChoice.logResponse1;
+				String newLog2 = currScene.logName + "." + currChoice.logEntry2 + "." + currChoice.logResponse2;
 				if(!toReturn.contains(newLog1)){
 					toReturn.add(newLog1);
 				}

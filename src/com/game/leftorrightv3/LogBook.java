@@ -18,7 +18,7 @@ public class LogBook {
 	private String logbookFile = "logbookFile";
 	private ArrayList<String> myLogs;
 	private int[] sceneChoiceNum;
-	private final int numberOfSceneChoices = 95; //Through cop scene
+	private final int numberOfSceneChoices = 92; //Through cop scene
 	private Context context;
 	
 	public LogBook(Context context, ArrayList<String> logEntries){

@@ -54,8 +54,8 @@ public class NewGame extends Activity {
 		currentScene = startScene;
 		choices c = startScene.choice.get(0);
 
-		left.setText(c.string1);
-		right.setText(c.string2);
+		left.setText(c.choice1);
+		right.setText(c.choice2);
 		gamePic.setText(startScene.sceneDescription);
 	}
 
@@ -91,7 +91,7 @@ public class NewGame extends Activity {
 		choices c = currentScene.choice.get(currentChoice);
 		int toReceive = 0;
 		if(view.getId() == R.id.left){
-			response = c.response1;
+			response = c.choiceResult1;
 			alive = c.alive1;
 			if(c.itemUsed1 == 0){
 				game.items[currentScene.itemsNeeded.get(currentNeeded).itemIndex]--;
@@ -125,15 +125,15 @@ public class NewGame extends Activity {
 					game.items[toReceive]++;
 					itemsFound[toReceive]++;
 				}
-				response = "You got a " + StartMenu.items[toReceive] + "!!";
+				response += "\nYou got a " + StartMenu.items[toReceive] + "!!";
 			}
 			
 			
 			
-			String newLog = currentScene.name + "." + c.string1 + "." + alive;
+			String newLog = currentScene.logName + "." + c.logEntry1 + "." + c.logResponse1;
 			logsFound.add(newLog);
 		} else{
-			response = c.response2;
+			response = c.choiceResult2;
 			alive = c.alive2;
 			if(c.itemUsed2 == 0){
 				game.items[currentScene.itemsNeeded.get(currentNeeded).itemIndex]--;
@@ -168,11 +168,11 @@ public class NewGame extends Activity {
 					game.items[toReceive]++;
 					itemsFound[toReceive]++;
 				}	
-				response = "You got a " + StartMenu.items[toReceive] + "!!";
+				response += "\nYou got a " + StartMenu.items[toReceive] + "!!";
 			}
 			
 			
-			String newLog = currentScene.name + "." + c.string2 + "." + alive;
+			String newLog = currentScene.logName + "." + c.logEntry2 + "." + c.logResponse2;
 			logsFound.add(newLog);
 		} 
 		if(alive){
@@ -212,8 +212,8 @@ public class NewGame extends Activity {
 			left = (Button)findViewById(R.id.left);
 			right = (Button)findViewById(R.id.right);
 			gamePic = (Button)findViewById(R.id.gamePic);
-			left.setText(c.string1);
-			right.setText(c.string2);
+			left.setText(c.choice1);
+			right.setText(c.choice2);
 			gamePic.setText(nextScene.sceneDescription);
 			
 		}
